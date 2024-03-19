@@ -1,11 +1,11 @@
-import TheSatToken from '@/components/sections/TheSatToken/TheSatToken';
+import Banner from '@/components/sections/Banner/Banner';
 import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <TheSatToken />
-    </div>
+    <>
+      <Banner />
+    </>
   );
 };
 
