@@ -16,9 +16,16 @@ body {
 }
 
 /* Navbar */
-.navBg {
+/* .navBg {
   background: rgba(4, 42, 26, 0.50);
   backdrop-filter: blur(2px);
+} */
+
+/* Banner shadow */
+.pathShadow {
+  border-radius: 496.893px;
+  background: #02B81C;
+  mix-blend-mode: lighten;
 }
 
 @layer base {

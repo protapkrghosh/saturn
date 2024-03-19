@@ -20,7 +20,7 @@ const NavBar = () => {
   }
 
   return (
-    <div className={color ? 'sticky bg-[#40fe5caf] top-0 z-50 duration-300 shadow-md py-1' : 'pt-0 shadow-sm border-b border-[#40fe5c1f] navBg duration-300'}>
+    <div className={color ? 'sticky bg-[#12312e] top-0 z-50 duration-300 shadow-md py-1' : 'pt-0 shadow-sm border-b border-[#40fe5c15] navBg bg-gradient-to-r from-[#043814] to-[#061B09] duration-300'}>
       <div className="max-w-[1620px] mx-auto xl:px-24 lg:px-16 md:px-10 sm:px-2 px-4">
         <div className="w-full top-0 left-0 z-10">
           <div className={`md:flex justify-between items-center ${color ? 'py-3' : 'py-5'}`}>
