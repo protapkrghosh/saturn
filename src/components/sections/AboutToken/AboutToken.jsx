@@ -4,7 +4,13 @@ import { Button } from '@/components/ui/button';
 
 const AboutToken = () => {
   return (
-    <div>
+    <div className='relative'>
+      {/* Top path shadow */}
+      <div>
+        <img src={pathBg} alt="Image" className='w-[300px] absolute top-16 left-[45%] opacity-[0.06]' />
+        <div className='pathShadowAbout blur-[250px] 2xl:blur-[300px] xl:w-[250px] 2xl:w-[450px] xl:h-[250px] 2xl:h-[450px] absolute top-16 left-[45%]' />
+      </div>
+
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
         {/* About Contents */}
         <div className='lg:w-1/2'>
@@ -27,6 +33,12 @@ const AboutToken = () => {
         <div className='lg:w-1/2 flex justify-end'>
           <img src={globe} alt="Image" className='w-full 2xl:w-[850px]' />
         </div>
+      </div>
+
+      {/* bottom path shadow */}
+      <div>
+        <img src={pathBg} alt="Image" className='w-[300px] absolute bottom-32 left-[32%] opacity-[0.06]' />
+        <div className='pathShadowAbout blur-[250px] 2xl:blur-[300px] xl:w-[200px] 2xl:w-[450px] xl:h-[200px] 2xl:h-[450px] absolute bottom-32 left-[36%]' />
       </div>
     </div>
   );
