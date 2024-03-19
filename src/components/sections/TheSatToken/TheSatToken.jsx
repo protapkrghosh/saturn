@@ -9,13 +9,13 @@ const TheSatToken = () => {
   return (
     <>
       <Container>
-        <div className='flex justify-center items-center lg:gap-12 xl:gap-16 2xl:gap-20'>
+        <div className='flex justify-center items-center gap-20'>
           {/*  THE SAT Token images  */}
           <div>
-            <img className='lg:w-[95%] xl:w-[100%] 2xl:w-full' src={TheSatTokenImg} alt="" />
+            <img className='' src={TheSatTokenImg} alt="" />
           </div>
           {/* THE SAT Token discription  */}
-          <div className='lg:w-[80%] xl:w-[70%] 2xl:w-full'>
+          <div className=''>
             <p className='text-[#FFF] font-inter text-[58px] font-bold leading-[75.4px] mb-[40px]'>THE <span className='text-[#40FE5B]'>SAT</span> Token</p>
             <div className='flex items-center gap-4 mb-[20px]'>
               <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
