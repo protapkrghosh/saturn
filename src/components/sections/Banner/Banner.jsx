@@ -8,11 +8,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Banner = () => {
   return (
-    <div style={{ backgroundImage: `url(${pathImg})` }} className='bg-no-repeat'>
-      <div style={{ backgroundImage: `url(${shapeImg})` }} className='bg-no-repeat'>
-        <div style={{ backgroundImage: `url(${moonImg})` }} className='bg-no-repeat'>
+    <div style={{ backgroundImage: `url(${moonImg})` }} className='bg-no-repeat bg-cover'>
+      <div style={{ backgroundImage: `url(${pathImg})` }} className='bg-no-repeat'>
+        <div style={{ backgroundImage: `url(${shapeImg})` }} className='bg-no-repeat bg-cover'>
           <Container>
-            <div>
+            <div className='h-[140vh] 2xl:h-[160vh] pt-[150px] 2xl:pt-[180px]'>
               <h1 className='text-[100px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>SPRINGFIELD AND <span className='text-[#40FE5B]'>$SAT</span></h1>
 
               <p className='text-[18px] text-white font-inter text-center w-full xl:w-[71%] 2xl:w-[58%] mx-auto mb-12'>In the bustling city of Springfield, life pulses with energy and vibrancy. From the quaint streets lined with charming boutiques to the bustling squares filled with the laughter of families.</p>

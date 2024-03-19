@@ -16,10 +16,10 @@ body {
 }
 
 /* Navbar */
-.navBg {
+/* .navBg {
   background: rgba(4, 42, 26, 0.50);
   backdrop-filter: blur(2px);
-}
+} */
 
 @layer base {
   :root {
