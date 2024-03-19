@@ -2,6 +2,8 @@ import React from 'react';
 import Container from '../Container/Container';
 import TheSatTokenImg from '@/assets/theSatToken/Group 1000003510.png'
 import { IoCheckmarkCircle } from "react-icons/io5";
+import { Button } from '@/components/ui/button';
+import { MdArrowOutward } from 'react-icons/md';
 
 const TheSatToken = () => {
   return (
@@ -32,6 +34,11 @@ const TheSatToken = () => {
               <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>For a playful, decentralized world, where the fun would begin</p></div>
             </div>
           </div>
+          <Button className="text-[#151414] rounded-[8px] group cursor-pointer md:px-5" data-aos="fade-up" data-aos-duration="3000">
+            <span className="flex justify-center items-center">
+              <p className='text-[#FFF] text-[16px] 2xl:text-[18px] font-inter font-medium'>Launch App</p>
+            </span>
+          </Button>
         </div>
       </Container>
     </>
