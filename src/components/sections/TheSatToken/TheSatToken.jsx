@@ -4,7 +4,7 @@ import TheSatTokenImg from '@/assets/imges/theSatToken/Group 1000003510.png';
 
 const TheSatToken = () => {
   return (
-    <div className='bg-[#040D1B]'>
+    <>
       <Container>
         <div>
           {/* THE SAT Token images  */}
@@ -17,7 +17,7 @@ const TheSatToken = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 
