@@ -13,8 +13,9 @@ const Banner = () => {
         <div style={{ backgroundImage: `url(${shapeImg})` }} className='bg-no-repeat bg-cover'>
           {/* Shadow */}
           <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
-
+          {/* Path */}
           <img src={pathImg} alt="Image" className='opacity-[0.06] absolute top-0 left-0' />
+          
           <Container>
             <div className='h-[140vh] 2xl:h-[160vh] pt-[150px] 2xl:pt-[180px]'>
               <h1 className='text-[100px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>SPRINGFIELD AND <span className='text-[#40FE5B]'>$SAT</span></h1>
