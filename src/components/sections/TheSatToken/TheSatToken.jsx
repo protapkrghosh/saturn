@@ -9,7 +9,7 @@ const TheSatToken = () => {
   return (
     <>
       <Container>
-        <div>
+        <div className='flex justify-center items-center'>
           {/* THE SAT Token images  */}
           <div>
             <img src={TheSatTokenImg} alt="" />
@@ -33,12 +33,12 @@ const TheSatToken = () => {
               <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
               <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>For a playful, decentralized world, where the fun would begin</p></div>
             </div>
+            <Button className="text-[#151414] rounded-[8px] group cursor-pointer md:px-5" data-aos="fade-up" data-aos-duration="3000">
+              <span className="flex justify-center items-center">
+                <p className='text-[#FFF] text-[16px] 2xl:text-[18px] font-inter font-medium'>Launch App</p>
+              </span>
+            </Button>
           </div>
-          <Button className="text-[#151414] rounded-[8px] group cursor-pointer md:px-5" data-aos="fade-up" data-aos-duration="3000">
-            <span className="flex justify-center items-center">
-              <p className='text-[#FFF] text-[16px] 2xl:text-[18px] font-inter font-medium'>Launch App</p>
-            </span>
-          </Button>
         </div>
       </Container>
     </>
