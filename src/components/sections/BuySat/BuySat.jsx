@@ -7,7 +7,10 @@ import icon4 from '@/assets/howToBuy/image203.png'
 
 const BuySat = () => {
   return (
-    <div className="pt-20 pb-28">
+    <div className="pt-20 pb-28 relative overflow-hidden">
+      {/* Shadow */}
+      <div className="w-[800px] h-[300px] tokenShadow absolute right-0" />
+
       <Container>
         <div>
           <h1 className='text-[#fff] text-[50px] md:text-[57px] lg:text-[44px] xl:text-[57px] 2xl:text-[58px] text-center font-inter font-bold capitalize'>How To Buy <span className='text-[#40FE5B] uppercase'>$sat</span> token</h1>
