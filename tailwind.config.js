@@ -18,7 +18,8 @@ module.exports = {
       },
       extend: {
          transitionDuration: {
-            2000: "50000ms",
+            2000: "20000ms",
+            2500: "50000ms",
             3000: "20000ms",
          },
          fontFamily: {
