@@ -1,4 +1,6 @@
-import globe from '@/assets/aboutToken/globe.png';
+// import globe from '@/assets/aboutToken/globe.png';
+import globe from '@/assets/aboutToken/Group1037.png';
+import earth from '@/assets/aboutToken/image19.png';
 import pathBg from '@/assets/aboutToken/group.png';
 import { Button } from '@/components/ui/button';
 
@@ -31,8 +33,9 @@ const AboutToken = () => {
         </div>
 
         {/* Globe Image */}
-        <div className='lg:w-1/2 flex justify-end'>
+        <div className='lg:w-1/2 flex justify-end relative'>
           <img src={globe} alt="Image" className='w-full 2xl:w-[850px] -mb-32 md:-mb-52 lg:mb-0' />
+          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10 animate-spin duration-3000'/>
         </div>
       </div>
 

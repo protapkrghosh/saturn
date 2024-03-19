@@ -16,7 +16,11 @@ module.exports = {
             "2xl": "1400px",
          },
       },
-      extend: {
+     extend: {
+        transitionDuration: {
+        '2000': '50000ms',
+        '3000': '20000ms',
+      },
          fontFamily: {
             bebasNeue: "Bebas Neue",
             inter: "Inter",
