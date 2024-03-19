@@ -1,9 +1,10 @@
+import TheSatToken from '@/components/sections/TheSatToken/TheSatToken';
 import React from 'react';
 
 const Home = () => {
   return (
     <div>
-      <h1>This is home content</h1>
+      <TheSatToken />
     </div>
   );
 };
