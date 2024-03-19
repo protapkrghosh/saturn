@@ -7,8 +7,8 @@ const AboutToken = () => {
     <div className='relative'>
       {/* Top path shadow */}
       <div>
-        <img src={pathBg} alt="Image" className='w-[300px] absolute top-16 left-[45%] opacity-[0.06]' />
-        <div className='pathShadowAbout blur-[250px] 2xl:blur-[300px] xl:w-[250px] 2xl:w-[450px] xl:h-[250px] 2xl:h-[450px] absolute top-16 left-[45%]' />
+        <img src={pathBg} alt="Image" className='w-[300px] 2xl:w-[400px] absolute top-16 2xl:top-60 left-[45%] 2xl:left-[40%] opacity-[0.06]' />
+        <div className='pathShadowTop blur-[250px] 2xl:blur-[300px] xl:w-[250px] 2xl:w-[300px] xl:h-[250px] 2xl:h-[300px] absolute top-16 2xl:top-52 left-[45%] 2xl:left-[43%]' />
       </div>
 
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
@@ -37,8 +37,8 @@ const AboutToken = () => {
 
       {/* bottom path shadow */}
       <div>
-        <img src={pathBg} alt="Image" className='w-[300px] absolute bottom-32 left-[32%] opacity-[0.06]' />
-        <div className='pathShadowAbout blur-[250px] 2xl:blur-[300px] xl:w-[200px] 2xl:w-[450px] xl:h-[200px] 2xl:h-[450px] absolute bottom-32 left-[36%]' />
+        <img src={pathBg} alt="Image" className='w-[300px] 2xl:w-[400px] absolute bottom-32 2xl:bottom-72 left-[32%] opacity-[0.06] 2xl:opacity-[0.05]' />
+        <div className='pathShadowBottom blur-[250px] 2xl:blur-[300px] xl:w-[200px] 2xl:w-[300px] xl:h-[200px] 2xl:h-[300px] absolute bottom-16 2xl:bottom-52 left-[36%] 2xl:left-[34%]' />
       </div>
     </div>
   );
