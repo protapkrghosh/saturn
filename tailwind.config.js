@@ -17,9 +17,15 @@ module.exports = {
          },
       },
       extend: {
+         transitionDuration: {
+            2000: "20000ms",
+            2500: "50000ms",
+            3000: "20000ms",
+         },
          fontFamily: {
             bebasNeue: "Bebas Neue",
             inter: "Inter",
+            gotham: "gotham",
          },
          colors: {
             border: "hsl(var(--border))",
