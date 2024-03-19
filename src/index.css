@@ -23,10 +23,26 @@ body {
 }
 
 /* About shadow */
-.pathShadowAbout {
+.pathShadowTop {
   border-radius: 496.893px;
-  background: #019617;
+  background: #019617ef;
+  /* background: #019617; */
   mix-blend-mode: lighten;
+}
+
+.pathShadowBottom {
+  border-radius: 496.893px;
+  background: #061824;
+  mix-blend-mode: lighten;
+}
+
+/* Buy SAT Token */
+.tokenShadow {
+  border-radius: 819.156px;
+  opacity: 0.6;
+  background: #02B81C;
+  mix-blend-mode: lighten;
+  filter: blur(267px);
 }
 
 @layer base {
