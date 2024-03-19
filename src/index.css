@@ -8,12 +8,24 @@ body {
   background-color: #040D1B;
 }
 
-/* Button */
+/* Buy now button */
 .customBtn {
   border-radius: 10px;
   border: 3px solid #40FE5B;
-  background: #02b81c4d;
   box-shadow: 0px 20px 113.8px 0px #40fe5b4d;
+}
+
+/* Navbar */
+/* .navBg {
+  background: rgba(4, 42, 26, 0.50);
+  backdrop-filter: blur(2px);
+} */
+
+/* Banner shadow */
+.pathShadow {
+  border-radius: 496.893px;
+  background: #02B81C;
+  mix-blend-mode: lighten;
 }
 
 @layer base {

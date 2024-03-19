@@ -20,8 +20,8 @@ const NavBar = () => {
   }
 
   return (
-    <div className={color ? 'sticky bg-[#40fe5caf] top-0 z-50 duration-300 shadow-md py-1' : 'pt-0 duration-300'}>
-      <div className="max-w-[1620px] mx-auto 2xl:px-28 xl:px-28 md:px-10 sm:px-2 px-4">
+    <div className={color ? 'sticky bg-[#12312e] top-0 z-50 duration-300 shadow-md py-1' : 'pt-0 shadow-sm border-b border-[#40fe5c15] navBg bg-gradient-to-r from-[#043814] to-[#061B09] duration-300'}>
+      <div className="max-w-[1620px] mx-auto xl:px-24 lg:px-16 md:px-10 sm:px-2 px-4">
         <div className="w-full top-0 left-0 z-10">
           <div className={`md:flex justify-between items-center ${color ? 'py-3' : 'py-5'}`}>
 
@@ -35,7 +35,7 @@ const NavBar = () => {
               }
             </div>
 
-            <ul className={`md:flex md:items-center md:py-3 pt-5 pb-7 space-x-5 xl:space-x-8 2xl:space-x-10 space-y-4 md:space-y-0 absolute md:static md:z-auto z-[-1px] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-linear opacity-0 md:opacity-100 rounded-[5px] px-4 ${open ? 'top-[75px] opacity-100 bg-[#40FE5B] z-10' : 'top-[-490px] navBg'}`}>
+            <ul className={`md:flex md:items-center md:py-3 pt-5 pb-7 space-x-5 xl:space-x-8 2xl:space-x-10 space-y-4 md:space-y-0 absolute md:static md:z-auto z-[-1px] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-linear opacity-0 md:opacity-100 rounded-[5px] px-4 ${open ? 'top-[75px] opacity-100 bg-[#40FE5B] z-10' : 'top-[-490px]'}`}>
 
               <li>
                 <Link to="/" className="2xl:text-[18px] text-[#40FE5B] font-inter ml-5 md:ml-4 uppercase">Home</Link>
@@ -58,12 +58,12 @@ const NavBar = () => {
               </li>
 
               <div className="block md:hidden">
-                <Button className="uppercase text-[16px] font-inter font-normal">Buy Now</Button>
+                <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
               </div>
             </ul>
 
             <div className="md:block hidden">
-              <Button className="uppercase text-[16px] font-inter font-normal">Buy Now</Button>
+              <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
             </div>
           </div>
         </div>
