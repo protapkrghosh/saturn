@@ -11,16 +11,16 @@ const Banner = () => {
     <div className='relative overflow-hidden'>
       {/* Shadow and background */}
       <div className='h-[120vh] 2xl:h-[145vh]'>
-        <img src={moonImg} alt="Image" className='absolute top-0 -mt-20' />
+        <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' />
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
-        <img src={shapeImg} alt="Image" className='absolute top-0 left-0' />
+        <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
         <img src={pathImg} alt="Image" className='opacity-[0.06] absolute top-0 left-0' />
       </div>
 
-      <div className='absolute top-40'>
+      <div className='absolute top-40 2xl:top-52 w-full'>
         <Container>
           <div>
-            <h1 className='text-[100px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>SPRINGFIELD AND <span className='text-[#40FE5B]'>$SAT</span></h1>
+            <h1 className='text-[100px] 2xl:text-[120px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>SPRINGFIELD AND <span className='text-[#40FE5B]'>$SAT</span></h1>
 
             <p className='text-[18px] text-white font-inter text-center w-full xl:w-[71%] 2xl:w-[58%] mx-auto mb-12'>In the bustling city of Springfield, life pulses with energy and vibrancy. From the quaint streets lined with charming boutiques to the bustling squares filled with the laughter of families.</p>
 
