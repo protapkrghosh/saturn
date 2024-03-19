@@ -10,7 +10,7 @@ const TheSatToken = () => {
     <>
       <Container>
         <div className='flex justify-center items-center lg:gap-12 xl:gap-16 2xl:gap-20'>
-          {/* THE SAT Token images  */}
+          {/*  THE SAT Token images  */}
           <div>
             <img className='lg:w-[95%] xl:w-[100%] 2xl:w-full' src={TheSatTokenImg} alt="" />
           </div>
