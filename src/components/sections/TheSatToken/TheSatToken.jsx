@@ -2,8 +2,8 @@ import React from 'react';
 import Container from '../Container/Container';
 import TheSatTokenImg from '@/assets/theSatToken/Group 1000003510.png'
 import { IoCheckmarkCircle } from "react-icons/io5";
+import { FaCheck } from "react-icons/fa6";
 import { Button } from '@/components/ui/button';
-import { MdArrowOutward } from 'react-icons/md';
 
 const TheSatToken = () => {
   return (
@@ -11,33 +11,43 @@ const TheSatToken = () => {
       <Container>
         <div className='2xl:flex xl:flex lg:flex md:flex-none justify-center items-center 2xl:gap-20 xl:gap-20 lg:gap-16'>
           {/*  THE SAT Token images  */}
-          <div>
-            <img className='2xl:w-full xl:w-full lg:w-[85%]' src={TheSatTokenImg} alt="" />
+          <div className='xl:-ml-16 xl:mr-20'>
+            <img className='2xl:w-full xl:w-full lg:w-[85%]' src={TheSatTokenImg} alt="Image" />
           </div>
+
           {/* THE SAT Token discription  */}
-          <div className=''>
+          <div>
             <p className='text-[#FFF] font-inter text-[58px] font-bold leading-[75.4px] mb-[40px]'>THE <span className='text-[#40FE5B]'>SAT</span> Token</p>
+
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
-              <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>In the heart of Springfield, where Lisa's wisdom met Homer's folly,</p></div>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+                <FaCheck className='text-white text-[14px]' />
+              </div>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>In the heart of Springfield, where Lisa's wisdom met Homer's folly,</p>
             </div>
+
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
-              <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>$SAT token emerged, a crypto saga so jolly.</p></div>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+                <FaCheck className='text-white text-[14px]' />
+              </div>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>$SAT token emerged, a crypto saga so jolly.</p>
             </div>
+
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
-              <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>A nod to Sat Simpson's mischief, it was born with a grin,</p></div>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+                <FaCheck className='text-white text-[14px]' />
+              </div>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>A nod to Sat Simpson's mischief, it was born with a grin,</p>
             </div>
+
             <div className='flex items-center gap-4 mb-[50px]'>
-              <div><IoCheckmarkCircle className='text-[#40FE5B]' /></div>
-              <div><p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>For a playful, decentralized world, where the fun would begin</p></div>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+                <FaCheck className='text-white text-[14px]' />
+              </div>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>For a playful, decentralized world, where the fun would begin</p>
             </div>
-            <Button className="bg-[#02b81c4d] rounded-[8px] group cursor-pointer md:px-5">
-              <span className="flex justify-center items-center">
-                <p className='text-[#FFF] text-[16px] 2xl:text-[18px] font-inter font-medium'>BUY NOW</p>
-              </span>
-            </Button>
+
+            <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
           </div>
         </div>
       </Container>
