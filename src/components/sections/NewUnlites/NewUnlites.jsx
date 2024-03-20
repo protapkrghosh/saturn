@@ -2,6 +2,7 @@ import Container from "../Container/Container";
 // import globe from "@/assets/unlitesAwait/Group479.png"
 import globe from "@/assets/unlitesAwait/Group41.png"
 import earthImg from "@/assets/unlitesAwait/image1.png"
+import pathBg from "@/assets/aboutToken/group.png"
 
 const NewUnlites = () => {
   return (
@@ -52,8 +53,8 @@ const NewUnlites = () => {
             </div>
 
             {/* Section Three */}
-            <div className="border-y border-[#074933] py-10">
-              <div className="flex justify-between gap-x-64 ml-16">
+            <div className="border-y border-[#074933] py-10 relative">
+              <div className="flex justify-between gap-x-64 ml-16 z-30">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">SAT Bridge</h3>
                   <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
@@ -64,6 +65,9 @@ const NewUnlites = () => {
                   <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
                 </div>
               </div>
+
+              {/* Path */}
+              <img src={pathBg} alt="image" className="w-[250px] 2xl:w-[300px] absolute -bottom-14 -right-20 opacity-[0.06] z-0" />
             </div>
           </div>
         </div>
