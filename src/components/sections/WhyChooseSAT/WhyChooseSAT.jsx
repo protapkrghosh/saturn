@@ -20,14 +20,14 @@ const WhyChooseSAT = () => {
           {/* why choose two part  */}
           <div className='w-1/2'>
             <div className='border mb-[30px]'>
-              <div>
+              <div className='max-w-[518px] pl-[40px] pt-[40px] pb-[46px]'>
                 <img className='mb-6' src={whyChooseIcon1} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Solana's Speed</p>
                 <p className='text-[#FFF] font-inter text-[18px]'>Take advantage of Solana's rapid transaction speed as $BART ensures swift and seamless transactions.</p>
               </div>
             </div>
             <div className='border'>
-              <div>
+              <div className='max-w-[488px] pl-[40px] pt-[40px] pb-[44px]'>
                 <img className='mb-6' src={whyChooseIcon2} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Community-Focused</p>
                 <p className='text-[#FFF] font-inter text-[18px]'>More than a memecoin, $SAT thrives on community
