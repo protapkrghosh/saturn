@@ -22,6 +22,15 @@ body {
   mix-blend-mode: lighten;
 }
 
+/* The satToken */
+.theSatShadow {
+  border-radius: 819.156px;
+  opacity: 0.4;
+  background: #02B81C;
+  mix-blend-mode: lighten;
+  filter: blur(267px);
+}
+
 /* About shadow */
 .pathShadowTop {
   border-radius: 496.893px;

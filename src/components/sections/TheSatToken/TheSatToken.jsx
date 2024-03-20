@@ -1,7 +1,5 @@
-import React from 'react';
 import Container from '../Container/Container';
 import TheSatTokenImg from '@/assets/theSatToken/Group 1000003510.png'
-import { IoCheckmarkCircle } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa6";
 import { Button } from '@/components/ui/button';
 
@@ -9,7 +7,7 @@ const TheSatToken = () => {
   return (
     <>
       <Container>
-        <div className='2xl:flex xl:flex lg:flex md:flex-none justify-center items-center 2xl:gap-20 xl:gap-20 lg:gap-16'>
+        <div className='2xl:flex xl:flex lg:flex md:flex-none justify-center items-center 2xl:gap-20 xl:gap-20 lg:gap-16 relative'>
           {/*  THE SAT Token images  */}
           <div className='xl:-ml-16 xl:mr-20'>
             <img className='2xl:w-full xl:w-full lg:w-[85%]' src={TheSatTokenImg} alt="Image" />
@@ -49,6 +47,9 @@ const TheSatToken = () => {
 
             <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
           </div>
+
+          {/* Shadow */}
+          <div className='w-[300px] md:w-[500px] lg:w-[400px] xl:w-[700px] 2xl:w-[800px] h-[300px] 2xl:h-[400px] theSatShadow absolute left-10 bottom-[500px] md:bottom-96 lg:bottom-10 xl:bottom-0' />
         </div>
       </Container>
     </>
