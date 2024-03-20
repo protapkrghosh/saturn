@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
-import whyChooseImg from '@/assets/whyChooseSAT/Group 1000003475.png'
+// import whyChooseImg from '@/assets/whyChooseSAT/Group 1000003475.png'
 
 const WhyChooseSAT = () => {
   return (
