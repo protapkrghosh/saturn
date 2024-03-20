@@ -21,10 +21,10 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-14 2xl:px-20 py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Click on Buy Button</p>
+                  <p className='text-white text-[16px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-14 2xl:px-20 py-[42px] xl:py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Click on Buy Button</p>
 
-                  <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
-                    <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
+                  <div className="flex items-center ml-[48px] xl:ml-[45px] 2xl:ml-[55px]">
+                    <div className="w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
                     <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
                   </div>
                 </div>
@@ -32,10 +32,10 @@ const BuySat = () => {
 
               {/* Right side button with icon */}
               <div className="md:w-1/2">
-                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-6 px-12">
-                  <p className="text-[#F4F4F4] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Ready to invest in the next big thing? Head to our buy section now and grab your share of the $SAT coin revolution. Don't miss out on the moon ride!</p>
+                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-6 lg:px-6 xl:px-12">
+                  <p className="text-[#F4F4F4] text-[15px] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Ready to invest in the next big thing? Head to our buy section now and grab your share of the $SAT coin revolution. Don't miss out on the moon ride!</p>
 
-                  <img src={icon3} alt="image" className="w-[60px] 2xl:w-[70px]" />
+                  <img src={icon3} alt="image" className="w-[40px] xl:w-[60px] 2xl:w-[70px]" />
                 </div>
               </div>
             </div>
@@ -45,10 +45,10 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-8 2xl:px-10 py-[38px] xl:py-[27px] 2xl:py-[26px] border border-[#074933] rounded-[100px] bg-[#06291B] xl:w-[49%] 2xl:w-[56%]'>Connect your Phantom wallet</p>
+                  <p className='text-white text-[16px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-8 xl:px-8 2xl:px-10 py-[31px] xl:py-[27px] 2xl:py-[26px] border border-[#074933] rounded-[100px] bg-[#06291B] lg:w-[56%] xl:w-[49%] 2xl:w-[56%]'>Connect your Phantom wallet</p>
 
-                  <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
-                    <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
+                  <div className="flex items-center ml-[48px] xl:ml-[45px] 2xl:ml-[55px]">
+                    <div className="w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
                     <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
                   </div>
                 </div>
@@ -56,10 +56,10 @@ const BuySat = () => {
 
               {/* Right side button with icon */}
               <div className="md:w-1/2">
-                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-6 px-12">
-                  <p className="text-[#F4F4F4] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Connect your wallet to join the meme coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don't miss out!</p>
+                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-6 lg:px-6 xl:px-12">
+                  <p className="text-[#F4F4F4] text-[15px] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Connect your wallet to join the meme coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don't miss out!</p>
 
-                  <img src={icon1} alt="image" className="w-[60px] 2xl:w-[70px]" />
+                  <img src={icon1} alt="image" className="w-[40px] xl:w-[60px] 2xl:w-[70px]" />
                 </div>
               </div>
             </div>
