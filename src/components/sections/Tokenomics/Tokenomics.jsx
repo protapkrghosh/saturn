@@ -10,9 +10,11 @@ import tokenIcon5 from '@/assets/Tokenomics/Group 1000003464.png';
 
 const Tokenomics = () => {
   return (
-    <>
+    <div className='overflow-hidden py-[130px]'>
       <Container>
         <div className='lg:flex relative'>
+          {/* Shadow */}
+          <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenomicsShoadow absolute top-[-400px] left-32" />
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
             <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
@@ -96,7 +98,7 @@ const Tokenomics = () => {
           </div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 
