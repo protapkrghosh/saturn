@@ -11,7 +11,7 @@ const AboutToken = () => {
       <div className='hidden lg:block'>
         <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute top-16 2xl:top-60 lg:left-[50%] xl:left-[45%] 2xl:left-[40%] opacity-[0.06]' />
 
-        <div className='pathShadowTop  blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[250px] 2xl:w-[300px] h-[150px] xl:h-[250px] 2xl:h-[300px] absolute top-16 2xl:top-52 lg:left-[55%] xl:left-[45%] 2xl:left-[43%]' />
+        <div className='pathShadowTop blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[250px] 2xl:w-[250px] h-[150px] xl:h-[250px] 2xl:h-[250px] absolute top-16 2xl:top-60 lg:left-[55%] xl:left-[45%] 2xl:left-[44%]' />
       </div>
 
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
@@ -35,7 +35,7 @@ const AboutToken = () => {
         {/* Globe Image */}
         <div className='lg:w-1/2 flex justify-end relative'>
           <img src={globe} alt="Image" className='w-full 2xl:w-[850px] -mb-32 md:-mb-52 lg:mb-0' />
-          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10 animate-spin duration-3000'/>
+          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10 animate-spin duration-3000' />
         </div>
       </div>
 
