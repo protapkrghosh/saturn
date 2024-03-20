@@ -16,8 +16,8 @@ const WhyChooseSAT = () => {
           <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none w-1/2'>
             <div className='relative'>
               <p className='text-[#FFF] font-inter text-[60px] font-bold mt-[80px] 2xl:ml-20 xl:ml-7'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
-              <img className='mt-[114px] ml-10 2xl:w-auto xl:w-[475px]' src={whyChooseImg} alt="" />
-              <img className='absolute 2xl:w-auto xl:w-[225px] 2xl:top-[345px] xl:top-[320px] 2xl:left-[205px] xl:left-[170px]' src={whyChooseIcon} alt="" />
+              <img className='mt-[114px] ml-10 2xl:w-auto xl:w-[475px] lg:w-[335px]' src={whyChooseImg} alt="" />
+              <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" />
             </div>
           </div>
           {/* why choose two part  */}
