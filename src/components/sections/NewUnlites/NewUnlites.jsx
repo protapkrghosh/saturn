@@ -75,7 +75,7 @@ const NewUnlites = () => {
       </div>
 
       {/* Shadow */}
-      <div className="w-[400px] 2xl:w-[430px] h-[550px] 2xl:h-[600px] unlitShadow absolute left-0 bottom-40"/>
+      <div className="w-[300px] lg:w-[260px] xl:w-[400px] 2xl:w-[450px] h-[450px] md:h-[550px] 2xl:h-[600px] unlitShadow absolute left-0 top-96 md:top-52 lg:top-auto lg:bottom-40"/>
     </div>
   );
 };
