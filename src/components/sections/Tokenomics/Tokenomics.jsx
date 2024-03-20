@@ -15,8 +15,8 @@ const Tokenomics = () => {
         <div className='lg:flex relative'>
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
-            <img className='lg:-ml-24 md:ml-20' src={tokenRound} alt="image" />
-            <img className='absolute 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="" />
+            <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
+            <img className='absolute animate-spin duration-2000 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="" />
           </div>
           {/* catagory section  */}
           <div className='lg:w-[50%]'>
