@@ -14,7 +14,7 @@ const TheSatToken = () => {
           </div>
 
           {/* THE SAT Token discription  */}
-          <div>
+          <div className='mt-20 lg:mt-0'>
             <p className='text-[#FFF] font-inter text-[58px] font-bold leading-[75.4px] mb-[40px]'>THE <span className='text-[#40FE5B]'>SAT</span> Token</p>
 
             <div className='flex items-center gap-4 mb-[20px]'>
