@@ -8,11 +8,11 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-      {/* <Banner /> */}
-      {/* <TheSatToken /> */}
-      {/* <AboutToken /> */}
+      <Banner />
+      <TheSatToken />
+      <AboutToken />
       <Tokenomics />
-      {/* <BuySat /> */}
+      <BuySat />
     </>
   );
 };
