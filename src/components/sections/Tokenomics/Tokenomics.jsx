@@ -15,8 +15,8 @@ const Tokenomics = () => {
         <div className='flex relative'>
           {/* imges section  */}
           <div className='w-[50%]'>
-            <img className='' src={tokenRound} alt="" />
-            <img className='absolute 2xl:top-[302px] xl:top-[245px] lg:top-[180px] 2xl:left-[270px] xl:left-[215px] lg:left-[150px]' src={earth} alt="" />
+            <img className='-ml-24' src={tokenRound} alt="image" />
+            <img className='absolute' src={earth} alt="" />
           </div>
           {/* catagory section  */}
           <div className='w-[50%]'>
