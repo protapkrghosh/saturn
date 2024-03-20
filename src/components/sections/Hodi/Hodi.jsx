@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 const Hodi = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <Container>
         <img src={line} alt="Image" className='mb-9' />
 
