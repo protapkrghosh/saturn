@@ -17,7 +17,7 @@ const BuySat = () => {
 
           <div className="mt-10">
             {/* Buy button */}
-            <div className='md:flex justify-between items-center'>
+            <div className='md:flex justify-between items-center -mb-5 md:mb-0'>
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="md:flex items-center">
@@ -43,7 +43,7 @@ const BuySat = () => {
             </div>
 
             {/* Phantom wallet */}
-            <div className='md:flex justify-between items-center mt-5 md:mt-0 md:my-10'>
+            <div className='md:flex justify-between items-center my-10'>
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="md:flex items-center">
@@ -69,15 +69,17 @@ const BuySat = () => {
             </div>
 
             {/* Choose amount to buy */}
-            <div className='md:flex justify-between items-center mb-10'>
+            <div className='md:flex justify-between items-center -mt-5 md:mt-0 mb-5 md:mb-10'>
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
-                <div className="flex items-center">
-                  <p className='text-white text-[16px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-5 lg:px-9 xl:px-10 2xl:px-[60px] py-[28px] lg:py-[41px] xl:py-[42px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B] md:w-[65%]'>Choose Amount to Buy</p>
+                <div className="md:flex items-center my-5 md:my-0">
+                  <p className='text-white text-[16px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-5 lg:px-9 xl:px-10 2xl:px-[60px] py-[38px] md:py-[28px] lg:py-[41px] xl:py-[42px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B] md:w-[65%] lg:w-auto'>Choose Amount to Buy</p>
 
-                  <div className="flex items-center ml-[25px] lg:ml-[45px] 2xl:ml-[55px]">
-                    <div className="w-[50px] lg:w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
-                    <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
+                  <div className="hidden md:block">
+                    <div className="flex items-center ml-[25px] lg:ml-[45px] 2xl:ml-[55px]">
+                      <div className="w-[50px] lg:w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
+                      <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,12 +98,14 @@ const BuySat = () => {
             <div className='md:flex justify-between items-center'>
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
-                <div className="flex items-center">
+                <div className="md:flex items-center mb-5 md:mb-0">
                   <p className='text-white text-[16px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-10 lg:px-[70px] xl:px-[78px] 2xl:px-28 py-[41px] md:py-[41px] xl:py-[42px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Buy  SAT token</p>
 
-                  <div className="flex items-center ml-[25px] lg:ml-[45px] 2xl:ml-[55px]">
-                    <div className="w-[50px] lg:w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
-                    <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
+                  <div className="hidden md:block">
+                    <div className="flex items-center ml-[25px] lg:ml-[45px] 2xl:ml-[55px]">
+                      <div className="w-[50px] lg:w-[100px] xl:w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
+                      <MdKeyboardArrowRight className="text-[#074933] text-[22px]" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -109,7 +113,7 @@ const BuySat = () => {
               {/* Right side button with icon */}
               <div className="md:w-2/3 lg:w-1/2">
                 <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-3 lg:py-5 2xl:py-6 px-5 lg:px-6 xl:px-12">
-                  <p className="text-[#F4F4F4] text-[14px] lg:text-[15px] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Buy $SAT token and join the meme revolution! Embrace the laughter, fun and potential gains. Secure your spot in the meme coin world. Hurry up!</p>
+                  <p className="text-[#F4F4F4] text-[14px] lg:text-[15px] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%] pl-2 md:pl-0">Buy $SAT token and join the meme revolution! Embrace the laughter, fun and potential gains. Secure your spot in the meme coin world. Hurry up!</p>
 
                   <img src={icon4} alt="image" className="w-[40px] xl:w-[60px] 2xl:w-[70px]" />
                 </div>
