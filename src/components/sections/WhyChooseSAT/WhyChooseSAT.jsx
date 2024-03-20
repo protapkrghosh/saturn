@@ -11,14 +11,14 @@ const WhyChooseSAT = () => {
         {/* chooes sat  */}
         <div className='flex gap-[50px]'>
           {/* why choose sat  */}
-          <div className='border'>
+          <div className='border w-1/2'>
             <div>
-              <p className='text-[#FFF] font-inter text-[60px] font-bold'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
+              <p className='text-[#FFF] font-inter text-[60px] font-bold pt-[80px] px-16'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
               <img src={whyChooseImg} alt="" />
             </div>
           </div>
           {/* why choose two part  */}
-          <div>
+          <div className='w-1/2'>
             <div className='border mb-[30px]'>
               <div>
                 <img className='mb-6' src={whyChooseIcon1} alt="" />
