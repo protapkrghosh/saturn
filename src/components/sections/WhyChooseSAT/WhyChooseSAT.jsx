@@ -11,7 +11,7 @@ const WhyChooseSAT = () => {
           {/* why choose sat  */}
           <div>
             <p className='text-[#FFF] font-inter text-[60px] font-bold'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
-            <img className='mix-blend-screen w-60' src={whyChooseImg} alt="" />
+
           </div>
           {/* why choose two part  */}
           <div></div>
