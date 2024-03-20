@@ -24,7 +24,7 @@ const NewUnlites = () => {
         <div className="lg:2/3 xl:w-3/3 2xl:w-3/3 mt-52 md:mt-72 lg:mt-0">
           <div className="max-w-[1620px] mx-auto 2xl:pr-[250px] xl:pr-24 lg:pr-16 md:pr-10 sm:pr-2 pr-4">
             {/* Section one */}
-            <div className="border-y border-[#074933] py-10">
+            <div className="border-y border-[#074933] sm:ml-2 ml-4 md:ml-10 lg:ml-0 py-10">
               <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-64 ml-10 xl:ml-16">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">SAT Wear</h3>
@@ -39,7 +39,7 @@ const NewUnlites = () => {
             </div>
 
             {/* Section Two */}
-            <div className="border-y border-[#074933] py-10 my-12">
+            <div className="border-y border-[#074933] sm:ml-2 ml-4 md:ml-10 lg:ml-0 py-10 my-12">
               <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-64 ml-10 xl:ml-16">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">Voting</h3>
@@ -54,7 +54,7 @@ const NewUnlites = () => {
             </div>
 
             {/* Section Three */}
-            <div className="border-y border-[#074933] py-10 relative">
+            <div className="border-y border-[#074933] sm:ml-2 ml-4 md:ml-10 lg:ml-0 py-10 relative">
               <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-64 ml-10 xl:ml-16 z-30">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">SAT Bridge</h3>
