@@ -9,7 +9,7 @@ const WhyChooseSAT = () => {
     <div>
       <Container>
         {/* chooes sat  */}
-        <div className='flex'>
+        <div className='flex gap-[50px]'>
           {/* why choose sat  */}
           <div className='border'>
             <div>
@@ -19,7 +19,7 @@ const WhyChooseSAT = () => {
           </div>
           {/* why choose two part  */}
           <div>
-            <div className='border'>
+            <div className='border mb-[30px]'>
               <div>
                 <img className='mb-6' src={whyChooseIcon1} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Solana's Speed</p>
