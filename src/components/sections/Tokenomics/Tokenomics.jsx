@@ -12,7 +12,7 @@ const Tokenomics = () => {
           {/* imges section  */}
           <div className='w-[50%]'>
             <img src={tokenRound} alt="" />
-            <img className='absolute top-[302px] left-[270px]' src={earth} alt="" />
+            <img className='absolute 2xl:top-[302px] xl:top-[245px] lg:top-[180px] 2xl:left-[270px] xl:left-[215px] lg:left-[150px]' src={earth} alt="" />
           </div>
           {/* catagory section  */}
           <div className='w-[50%]'>
