@@ -12,7 +12,7 @@ const WhyChooseSAT = () => {
       <Container>
         {/* chooes sat  */}
         <div className='lg:flex gap-[50px]'>
-          {/* why choose sat  */}
+          {/*  why choose sat  */}
           <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none w-1/2'>
             <div className='relative'>
               <p className='text-[#FFF] font-inter text-[60px] font-bold mt-[80px] 2xl:ml-20 xl:ml-7'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
