@@ -3,9 +3,9 @@ import Container from '../Container/Container';
 
 const Roadmap = () => {
   return (
-    <div className='mt-20 mb-28'>
+    <div className='pt-20 pb-28 relative'>
       <Container>
-        <div>
+        <div className=''>
           <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold capitalize'>Roadmap</h1>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 2xl:gap-x-24 gap-y-20 md:gap-y-0 mt-14 md:mt-20'>
@@ -17,7 +17,7 @@ const Roadmap = () => {
               </div>
 
               {/* Card */}
-              <div className='text-white xl:text-[17px] 2xl:text-[18px] bg-[#06201b] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
+              <div className='text-white xl:text-[17px] 2xl:text-[18px] bg-[#06201bab] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
                 <div className='flex items-center'>
                   <div className='w-3 h-3 bg-[#82D173] rounded-full mr-3' />
                   <p>Launch on Solana</p>
@@ -41,7 +41,7 @@ const Roadmap = () => {
               </div>
 
               {/* Card */}
-              <div className='text-white xl:text-[17px] 2xl:text-[18px] font-inter bg-[#06201b] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
+              <div className='text-white xl:text-[17px] 2xl:text-[18px] font-inter bg-[#06201b7c] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
                 <div className='flex items-center'>
                   <div className='w-3 h-3 bg-[#82D173] rounded-full mr-3' />
                   <p>Public Presale</p>
@@ -65,7 +65,7 @@ const Roadmap = () => {
               </div>
 
               {/* Card */}
-              <div className='text-white xl:text-[17px] 2xl:text-[18px] bg-[#06201b] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
+              <div className='text-white xl:text-[17px] 2xl:text-[18px] bg-[#06201bab] border border-[#074933] rounded-[15px] pl-8 py-10 mt-8'>
                 <div className='flex items-center'>
                   <div className='w-3 h-3 bg-[#82D173] rounded-full mr-3' />
                   <p>Trending on X</p>
@@ -83,6 +83,9 @@ const Roadmap = () => {
           </div>
         </div>
       </Container>
+
+      {/* Shadow */}
+      <div className='w-[400px] lg:w-[500px] xl:w-[700px] 2xl:w-[1326px] h-[300px] lg:h-[200px] xl:h-[176px] mapShadow absolute md:left-64 xl:left-72 bottom-96 md:bottom-52 lg:bottom-0' />
     </div>
   );
 };
