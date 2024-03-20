@@ -9,11 +9,11 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner />
       <TheSatToken />
       <AboutToken />
       <Tokenomics />
-      <BuySat />
+      <BuySat /> */}
       <Roadmap />
     </>
   );
