@@ -7,7 +7,7 @@ import whyChooseIcon2 from '@/assets/whyChooseSAT/Black.png'
 
 const WhyChooseSAT = () => {
   return (
-    <div>
+    <div className='pt-[189px] pb-[216px]'>
       <Container>
         {/* chooes sat  */}
         <div className='flex gap-[50px]'>
