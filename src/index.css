@@ -30,6 +30,14 @@ body {
   mix-blend-mode: lighten;
 }
 
+/* Tokenomics shoadow */
+.tokenomicsShoadow {
+  border-radius: 1326px;
+  opacity: 0.6;
+  background: #02B81C;
+  filter: blur(267px);
+}
+
 .pathShadowBottom {
   border-radius: 496.893px;
   background: #061824;
