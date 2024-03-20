@@ -3,9 +3,9 @@ import Container from '../Container/Container';
 
 const Roadmap = () => {
   return (
-    <div className='pt-20 pb-28 relative'>
+    <div className='pt-20 pb-28 relative overflow-hidden'>
       <Container>
-        <div className=''>
+        <div>
           <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold capitalize'>Roadmap</h1>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 2xl:gap-x-24 gap-y-20 md:gap-y-0 mt-14 md:mt-20'>
