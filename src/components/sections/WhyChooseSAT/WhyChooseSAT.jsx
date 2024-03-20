@@ -3,14 +3,20 @@ import Container from '../Container/Container';
 
 const WhyChooseSAT = () => {
   return (
-    <>
+    <div>
       <Container>
+        {/* chooes sat  */}
         <div>
-          {/* chooes sat  */}
-
+          {/* why choose sat  */}
+          <div>
+            <p className='text-[#FFF] font-inter text-[60px] font-bold'>Why Choose <span className='text-[#40FE5B]'>SAT</span></p>
+          </div>
+          {/* why choose two part  */}
+          <div></div>
+          <div></div>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 
