@@ -21,7 +21,7 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] 2xl:text-[25px] text-center font-semibold px-12 2xl:px-20 py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Click on Buy Button</p>
+                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-14 2xl:px-20 py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Click on Buy Button</p>
 
                   <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
                     <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
@@ -45,7 +45,7 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] 2xl:text-[25px] text-center font-semibold px-12 2xl:px-10 py-[38px] 2xl:py-[26px] border border-[#074933] rounded-[100px] bg-[#06291B] 2xl:w-[56%]'>Connect your Phantom wallet</p>
+                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-8 2xl:px-10 py-[38px] xl:py-[27px] 2xl:py-[26px] border border-[#074933] rounded-[100px] bg-[#06291B] xl:w-[49%] 2xl:w-[56%]'>Connect your Phantom wallet</p>
 
                   <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
                     <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
@@ -57,7 +57,7 @@ const BuySat = () => {
               {/* Right side button with icon */}
               <div className="md:w-1/2">
                 <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-6 px-12">
-                  <p className="text-[#F4F4F4] text-[18px] font-normal w-[90%] 2xl:w-[77%]">Connect your wallet to join the meme coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don't miss out!</p>
+                  <p className="text-[#F4F4F4] 2xl:text-[18px] font-normal w-[90%] 2xl:w-[77%]">Connect your wallet to join the meme coin revolution! Seamlessly participate in the fun and wild ride of our community-driven token. Don't miss out!</p>
 
                   <img src={icon1} alt="image" className="w-[60px] 2xl:w-[70px]" />
                 </div>
@@ -69,7 +69,7 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] 2xl:text-[25px] text-center font-semibold px-12 2xl:px-[60px] py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Choose Amount to Buy</p>
+                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-10 2xl:px-[60px] py-[38px] xl:py-[42px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Choose Amount to Buy</p>
 
                   <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
                     <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
@@ -80,8 +80,8 @@ const BuySat = () => {
 
               {/* Right side button with icon */}
               <div className="md:w-1/2">
-                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 2xl:py-9 px-12">
-                  <p className="text-[#F4F4F4] text-[18px] font-normal w-[90%] 2xl:w-[65%]">Choose the amount to buy and join the meme coin frenzy!</p>
+                <div className="flex justify-between items-center border-[2px] border-[#074933] rounded-[90px] py-5 xl:py-8 2xl:py-9 px-12">
+                  <p className="text-[#F4F4F4] 2xl:text-[18px] font-normal w-[90%] xl:w-[73%] 2xl:w-[65%]">Choose the amount to buy and join the meme coin frenzy!</p>
 
                   <img src={icon2} alt="image" className="w-[60px] h-[45px] 2xl:w-[70px]" />
                 </div>
@@ -93,7 +93,7 @@ const BuySat = () => {
               {/* Left side button */}
               <div className='md:w-1/2 font-inter'>
                 <div className="flex items-center">
-                  <p className='text-white text-[20px] 2xl:text-[25px] text-center font-semibold px-12 2xl:px-28 py-[38px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Buy  SAT token</p>
+                  <p className='text-white text-[20px] xl:text-[18px] 2xl:text-[25px] text-center font-semibold px-12 xl:px-[78px] 2xl:px-28 py-[38px] xl:py-[42px] 2xl:py-[45px] border border-[#074933] rounded-[100px] bg-[#06291B]'>Buy  SAT token</p>
 
                   <div className="flex items-center ml-[45px] 2xl:ml-[55px]">
                     <div className="w-[200px] h-[2px] bg-[#074933] -mr-[12px] rounded-md" />
