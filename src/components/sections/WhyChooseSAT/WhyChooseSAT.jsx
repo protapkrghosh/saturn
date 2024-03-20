@@ -11,7 +11,7 @@ const WhyChooseSAT = () => {
       <div className='whyChooseSAT w-[400px] h-[1000px] absolute -top-52 -left-52 ' />
       <Container>
         {/* chooes sat  */}
-        <div className='flex gap-[50px]'>
+        <div className='lg:flex gap-[50px]'>
           {/* why choose sat  */}
           <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none w-1/2'>
             <div className='relative'>
