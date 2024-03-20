@@ -17,12 +17,14 @@ const Tokenomics = () => {
           <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenomicsShoadow absolute top-[-400px] left-32" />
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
-            <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
-            <img className='absolute animate-spin duration-2000 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="" />
+            <img className='lg:-ml-24 md:ml-20 animate-spin duration-3000' src={tokenRound} alt="image" />
+            <img className='absolute animate-spin duration-3000 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="image" />
           </div>
+
           {/* catagory section  */}
           <div className='lg:w-[50%]'>
-            <p className='text-[#FFF] font-inter text-[58px] font-bold uppercase'>Tokenomics</p>
+            <h1 className='text-[#FFF] font-inter text-[58px] font-bold uppercase mb-10'>Tokenomics</h1>
+            
             {/* all catagory section  */}
             {/* catagory 1  */}
             <div className='flex justify-between items-center mb-8'>
@@ -39,6 +41,7 @@ const Tokenomics = () => {
                 <p className='text-[#FFF] font-inter text-[25px] '>35 %</p>
               </div>
             </div>
+
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
@@ -53,6 +56,7 @@ const Tokenomics = () => {
                 <p className='text-[#FFF] font-inter text-[25px] '>30 %</p>
               </div>
             </div>
+
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
@@ -67,6 +71,7 @@ const Tokenomics = () => {
                 <p className='text-[#FFF] font-inter text-[25px] '>20 %</p>
               </div>
             </div>
+
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
@@ -81,6 +86,7 @@ const Tokenomics = () => {
                 <p className='text-[#FFF] font-inter text-[25px] '>10 %</p>
               </div>
             </div>
+
             <div className='flex justify-between items-center'>
               <div className='flex items-center gap-2'>
                 <div>
