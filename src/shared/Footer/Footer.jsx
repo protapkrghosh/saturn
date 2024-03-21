@@ -66,6 +66,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* Copyright */}
+        <div className='bg-[#02B81C]'>
+          <p className='text-[#fff] text-center font-inter py-6'>©{new Date().getFullYear()} All Rights reserved to $SAT Token</p>
+        </div>
       </div>
     </div>
   );
