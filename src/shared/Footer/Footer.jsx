@@ -12,8 +12,12 @@ const Footer = () => {
     <div className=''>
       {/* sm & md footer */}
       <div className='block lg:hidden'>
-        <div className='-mt-96 md:-mt-72'>
+        <div className='-mt-96 md:-mt-72 relative'>
           <div style={{ backgroundImage: `url(${circleImg})` }} className='bg-center bg-no-repeat bg-contain 2xl:bg-cover min-h-[1055px] 2xl:min-h-[1350px]'>
+
+            {/* Shadow */}
+            <div className='w-full h-[150px] md:h-[200px] absolute top-[300px] md:top-56 footerShadow' />
+
             <img src={pathImg} alt="Image" className='w-[250px] md:w-[350px] lg:w-[430px] xl:w-[650px] 2xl:w-[900px] pt-[465px] md:pt-[450px] lg:pt-[420px] xl:pt-[350px] 2xl:pt-[430px] mx-auto' />
 
             <p className='text-[#FFF] text-[19px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] font-inter font-semibold uppercase text-center w-[75%] md:w-[64%] xl:w-[64%] 2xl:w-[50%] mx-auto -mt-24 md:-mt-40 lg:-mt-52 xl:-mt-72 2xl:-mt-[350px]'>JOIN SAT AND LETS BARK OUR  WAY TO CRYPTO STARDOM  TOGETHER!</p>
@@ -80,6 +84,9 @@ const Footer = () => {
       {/* 2xl footer */}
       <div className='hidden lg:block lg:-mt-32 xl:mt-0'>
         <div className='relative'>
+          {/* Shadow */}
+          <div className='w-full h-[500px] absolute footerShadow' />
+
           <div style={{ backgroundImage: `url(${circleImg2})` }} className='bg-center bg-no-repeat bg-contain 2xl:bg-cover min-h-[935px] 2xl:min-h-[1350px]'>
             <img src={pathImg} alt="Image" className='w-[250px] md:w-[350px] lg:w-[430px] xl:w-[650px] 2xl:w-[900px] mx-auto pt-[380px] xl:pt-[300px] 2xl:pt-[400px]' />
 
