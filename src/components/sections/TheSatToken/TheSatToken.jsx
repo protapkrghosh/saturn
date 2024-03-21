@@ -25,7 +25,7 @@ const TheSatToken = () => {
             </div>
 
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 xl:mt-0'>
                 <FaCheck className='text-white text-[14px]' />
               </div>
               <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>$SAT token emerged, a crypto saga so jolly.</p>

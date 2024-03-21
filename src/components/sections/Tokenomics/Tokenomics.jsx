@@ -7,6 +7,7 @@ import tokenIcon2 from '@/assets/Tokenomics/Group 1000003461.png';
 import tokenIcon3 from '@/assets/Tokenomics/Group 1000003462.png';
 import tokenIcon4 from '@/assets/Tokenomics/Group 1000003463.png';
 import tokenIcon5 from '@/assets/Tokenomics/Group 1000003464.png';
+import CountUp from 'react-countup';
 
 const Tokenomics = () => {
   return (
@@ -38,7 +39,14 @@ const Tokenomics = () => {
                 </div>
               </div>
               <div>
-                <p className='text-[#FFF] font-inter text-[25px] '>35 %</p>
+                <CountUp
+                  start={0}
+                  end={35}
+                  duration={5}
+                  separator=" "
+                  suffix=" %"
+                  className='text-[#FFF] font-inter text-[25px] '
+                />
               </div>
             </div>
 
@@ -53,7 +61,14 @@ const Tokenomics = () => {
                 </div>
               </div>
               <div>
-                <p className='text-[#FFF] font-inter text-[25px] '>30 %</p>
+                <CountUp
+                  start={0}
+                  end={30}
+                  duration={5}
+                  separator=" "
+                  suffix=" %"
+                  className='text-[#FFF] font-inter text-[25px] '
+                />
               </div>
             </div>
 
@@ -68,7 +83,14 @@ const Tokenomics = () => {
                 </div>
               </div>
               <div>
-                <p className='text-[#FFF] font-inter text-[25px] '>20 %</p>
+                <CountUp
+                  start={0}
+                  end={20}
+                  duration={5}
+                  separator=" "
+                  suffix=" %"
+                  className='text-[#FFF] font-inter text-[25px] '
+                />
               </div>
             </div>
 
@@ -83,7 +105,14 @@ const Tokenomics = () => {
                 </div>
               </div>
               <div>
-                <p className='text-[#FFF] font-inter text-[25px] '>10 %</p>
+                <CountUp
+                  start={0}
+                  end={10}
+                  duration={5}
+                  separator=" "
+                  suffix=" %"
+                  className='text-[#FFF] font-inter text-[25px] '
+                />
               </div>
             </div>
 
@@ -98,7 +127,14 @@ const Tokenomics = () => {
                 </div>
               </div>
               <div>
-                <p className='text-[#FFF] font-inter text-[25px] '>5 %</p>
+                <CountUp
+                  start={0}
+                  end={5}
+                  duration={5}
+                  separator=" "
+                  suffix=" %"
+                  className='text-[#FFF] font-inter text-[25px] '
+                />
               </div>
             </div>
           </div>
