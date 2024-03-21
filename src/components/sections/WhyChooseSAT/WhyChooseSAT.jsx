@@ -14,7 +14,7 @@ const WhyChooseSAT = () => {
           {/*  why choose sat  */}
           <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none'>
             <div className='relative'>
-              <p className='text-[#FFF] font-inter text-[60px] font-bold mt-[81px] text-center lg:px-2'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
+              <p className='text-[#FFF] font-inter text-[60px] font-bold mt-[81px] text-center lg:px-2 mb-20'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
               <img className='mx-auto lg:absolute 2xl:w-[650px] xl:w-[510px] lg:w-[375px] 2xl:top-[170px] xl:top-[265px] lg:top-[415px] 2xl:left-[15px] xl:left-[20px] lg:left-[20px]' src={whyChooseImg} alt="" />
 
             </div>
