@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <div className='relative overflow-hidden'>
       {/* Shadow and background */}
-      <div className='h-[70vh] md:h-[120vh] 2xl:h-[145vh]'>
+      <div className='h-[120vh] 2xl:h-[145vh]'>
         <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' />
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
         <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
