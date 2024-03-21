@@ -18,14 +18,14 @@ const Tokenomics = () => {
           <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenomicsShoadow absolute top-[-400px] left-32" />
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
-            <img className='lg:-ml-24 md:ml-20 animate-spin duration-3000' src={tokenRound} alt="image" />
-            <img className='absolute animate-spin duration-3000 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="image" />
+            <img className='lg:-ml-24 md:ml-20' src={tokenRound} alt="image" />
+            <img className='absolute 2xl:top-[300px] xl:top-[245px] lg:top-[192px] md:top-[235px] top-[168px] 2xl:left-[175px] xl:left-[120px] lg:left-[80px] md:left-[290px] left-[150px] xl:w-auto lg:w-24 md:w-32 w-[98px]' src={earth} alt="image" />
           </div>
 
           {/* catagory section  */}
           <div className='lg:w-[50%]'>
-            <h1 className='text-[#FFF] font-inter text-[58px] font-bold uppercase mb-10'>Tokenomics</h1>
-            
+            <h1 className='text-[#FFF] font-inter text-[58px] font-bold capitalize mb-10'>Tokenomics</h1>
+
             {/* all catagory section  */}
             {/* catagory 1  */}
             <div className='flex justify-between items-center mb-8'>
@@ -35,7 +35,7 @@ const Tokenomics = () => {
                 </div>
                 <div>
                   <p className='text-[#FFF] font-inter text-[25px] font-bold'>Liquidity  Pool</p>
-                  <p className='text-[#FFF] font-inter text-[15px]'>35 billion $BART</p>
+                  <p className='text-[#FFF] font-inter text-[15px]'>35 billion $SAT</p>
                 </div>
               </div>
               <div>
@@ -57,7 +57,7 @@ const Tokenomics = () => {
                 </div>
                 <div>
                   <p className='text-[#FFF] font-inter text-[25px] font-bold'>Presale</p>
-                  <p className='text-[#FFF] font-inter text-[15px]'>30 billion $BART</p>
+                  <p className='text-[#FFF] font-inter text-[15px]'>30 billion $SAT</p>
                 </div>
               </div>
               <div>
@@ -79,7 +79,7 @@ const Tokenomics = () => {
                 </div>
                 <div>
                   <p className='text-[#FFF] font-inter text-[25px] font-bold'>Future development</p>
-                  <p className='text-[#FFF] font-inter text-[15px]'>20 billion $BART</p>
+                  <p className='text-[#FFF] font-inter text-[15px]'>20 billion $SAT</p>
                 </div>
               </div>
               <div>
@@ -101,7 +101,7 @@ const Tokenomics = () => {
                 </div>
                 <div>
                   <p className='text-[#FFF] font-inter text-[25px] font-bold'>Staking  rewards</p>
-                  <p className='text-[#FFF] font-inter text-[15px]'>10 billion $BART</p>
+                  <p className='text-[#FFF] font-inter text-[15px]'>10 billion $SAT</p>
                 </div>
               </div>
               <div>
@@ -123,7 +123,7 @@ const Tokenomics = () => {
                 </div>
                 <div>
                   <p className='text-[#FFF] font-inter text-[25px] font-bold'>Team</p>
-                  <p className='text-[#FFF] font-inter text-[15px]'>5 billion $BART</p>
+                  <p className='text-[#FFF] font-inter text-[15px]'>5 billion $SAT</p>
                 </div>
               </div>
               <div>

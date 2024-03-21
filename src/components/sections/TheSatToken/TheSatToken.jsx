@@ -15,34 +15,34 @@ const TheSatToken = () => {
 
           {/* THE SAT Token discription  */}
           <div className='mt-20 lg:mt-0'>
-            <p className='text-[#FFF] font-inter text-[58px] font-bold leading-[75.4px] mb-[40px]'>THE <span className='text-[#40FE5B]'>SAT</span> Token</p>
+            <p className='text-[#FFF] font-inter text-[58px] font-bold leading-[75.4px] mb-[40px]'>The <span className='text-[#40FE5B]'>$SAT</span> Token</p>
 
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full'>
                 <FaCheck className='text-white text-[14px]' />
               </div>
-              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>In the heart of Springfield, where Lisa's wisdom met Homer's folly,</p>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Real utility-focused token</p>
             </div>
 
             <div className='flex items-center gap-4 mb-[20px]'>
               <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 xl:mt-0'>
                 <FaCheck className='text-white text-[14px]' />
               </div>
-              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>$SAT token emerged, a crypto saga so jolly.</p>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Holders decide everything via voting</p>
             </div>
 
             <div className='flex items-center gap-4 mb-[20px]'>
-              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full'>
                 <FaCheck className='text-white text-[14px]' />
               </div>
-              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>A nod to Sat Simpson's mischief, it was born with a grin,</p>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Weekly raffles and giveaways</p>
             </div>
 
             <div className='flex items-center gap-4 mb-[50px]'>
-              <div className='bg-[#40FE5B] p-[3px] rounded-full lg:-mt-6 2xl:mt-0'>
+              <div className='bg-[#40FE5B] p-[3px] rounded-full'>
                 <FaCheck className='text-white text-[14px]' />
               </div>
-              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>For a playful, decentralized world, where the fun would begin</p>
+              <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Launching staking very soon</p>
             </div>
 
             <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>

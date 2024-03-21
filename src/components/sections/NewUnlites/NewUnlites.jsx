@@ -8,7 +8,7 @@ const NewUnlites = () => {
   return (
     <div className="mt-32 pb-32 relative">
       <Container>
-        <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold'>Beyond memes new <span className="text-[#40FE5B]">unlites</span> await</h1>
+        <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold'>New <span className="text-[#40FE5B]">utilities</span> await</h1>
       </Container>
 
       {/* Content area */}
