@@ -26,7 +26,7 @@ const NavBar = () => {
           <div className={`md:flex justify-between items-center ${color ? 'py-3' : 'py-5'}`}>
 
             <Link to="/">
-              <img src={logo} alt="Logo" className="w-[50px] mr-3 ml-5 md:ml-0 animate-spin duration-2000" />
+              <img src={logo} alt="Logo" className="w-[50px] mr-3 ml-5 md:ml-0" />
             </Link>
 
             <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">

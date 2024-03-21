@@ -8,7 +8,7 @@ const NewUnlites = () => {
   return (
     <div className="mt-32 pb-32 relative">
       <Container>
-        <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold'>Beyond memes new <span className="text-[#40FE5B]">unlites</span> await</h1>
+        <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold'>New <span className="text-[#40FE5B]">utilities</span> await</h1>
       </Container>
 
       {/* Content area */}
@@ -17,7 +17,7 @@ const NewUnlites = () => {
         <div className='lg:w-1/2 flex justify-start relative'>
           <img src={globe} alt="Image" className='w-[300px] lg:w-[280px] xl:w-auto 2xl:w-[480px] h-[400px] xl:h-[510px] 2xl:h-auto -mb-32 md:-mb-52 lg:mb-0 mix-blend-screen' />
 
-          <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[190px] 2xl:w-[240px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[195px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-5 2xl:left-9 animate-spin duration-3000' />
+          <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[190px] 2xl:w-[240px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[195px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-5 2xl:left-9' />
         </div>
 
         {/* Sat wear */}
