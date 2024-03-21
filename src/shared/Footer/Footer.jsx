@@ -1,5 +1,5 @@
 import Container from '@/components/sections/Container/Container';
-import circleImg from '@/assets/footer/Group21.png';
+import circleImg from '@/assets/footer/Group1.png';
 import pathImg from '@/assets/footer/path.png';
 import logo from '@/assets/logo.png';
 import { Link } from 'react-router-dom';
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         {/* Footer menu */}
-        <div className='bg-[#07360F] -mt-[430px] md:-mt-[354px] lg:-mt-[295px] xl:-mt-[230px]'>
+        <div className='-mt-[430px] md:-mt-[354px] lg:-mt-[295px] xl:-mt-[217px]'>
           <div className="max-w-[1670px] mx-auto 2xl:px-0 xl:px-24 lg:px-[70px] md:px-10 sm:px-2 px-4">
             <div className='lg:flex justify-between items-center py-6'>
               <Link>
@@ -68,8 +68,8 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className='bg-[#02B81C]'>
-          <p className='text-[#fff] text-center font-inter py-6'>©{new Date().getFullYear()} All Rights reserved to $SAT Token</p>
+        <div className='mt-[54px]'>
+          <p className='text-[#fff] text-center font-inter'>©{new Date().getFullYear()} All Rights reserved to $SAT Token</p>
         </div>
       </div>
     </div>
