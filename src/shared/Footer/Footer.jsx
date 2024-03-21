@@ -8,7 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div>
+    <div className=''>
       <div className=''>
         <div style={{ backgroundImage: `url(${circleImg})` }} className='bg-center bg-no-repeat bg-contain 2xl:bg-cover min-h-[1055px] 2xl:min-h-[1350px]'>
           <img src={pathImg} alt="Image" className='w-[250px] md:w-[350px] lg:w-[430px] xl:w-[650px] 2xl:w-[900px] pt-[465px] md:pt-[450px] lg:pt-[420px] xl:pt-[350px] 2xl:pt-[430px] mx-auto' />
