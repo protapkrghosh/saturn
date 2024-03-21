@@ -1,17 +1,18 @@
 // import globe from '@/assets/aboutToken/globe.png';
-import globe from '@/assets/aboutToken/Group1037.png';
+import globe from '@/assets/aboutToken/Group81.png';
+// import globe from '@/assets/aboutToken/Group1037.png';
 import earth from '@/assets/aboutToken/image19.png';
 import pathBg from '@/assets/aboutToken/group.png';
 import { Button } from '@/components/ui/button';
 
 const AboutToken = () => {
   return (
-    <div className='relative -mt-20 md:-mt-44 lg:mt-0 mb-28 lg:mb-0'>
+    <div className='relative -pt-20 md:-pt-44 lg:pt-40  mb-28'>
       {/* Top path shadow */}
       <div className='hidden lg:block'>
-        <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute top-16 2xl:top-60 lg:left-[50%] xl:left-[45%] 2xl:left-[40%] opacity-[0.06]' />
+        <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute top-16 2xl:top-0 lg:left-[50%] xl:left-[45%] 2xl:left-[40%] opacity-[0.06]' />
 
-        <div className='pathShadowTop blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[250px] 2xl:w-[250px] h-[150px] xl:h-[250px] 2xl:h-[250px] absolute top-16 2xl:top-60 lg:left-[55%] xl:left-[45%] 2xl:left-[44%]' />
+        <div className='pathShadowTop blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[250px] 2xl:w-[250px] h-[150px] xl:h-[250px] 2xl:h-[250px] absolute top-16 2xl:top-0 lg:left-[55%] xl:left-[45%] 2xl:left-[44%]' />
       </div>
 
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
@@ -35,17 +36,17 @@ const AboutToken = () => {
         </div>
 
         {/* Globe Image */}
-        <div className='lg:w-1/2 flex justify-end relative'>
-          <img src={globe} alt="Image" className='w-full 2xl:w-[850px] -mb-32 md:-mb-52 lg:mb-0' />
-          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10' />
+        <div className='lg:w-1/2 flex justify-end 2xl:justify-center relative'>
+          <img src={globe} alt="Image" className='w-[70%] 2xl:w-[65%] -mb-32 md:-mb-52 lg:mb-0' />
+          {/* <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10' /> */}
         </div>
       </div>
 
       {/* bottom path shadow */}
       <div className='hidden lg:block'>
-        <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute lg:bottom-14 xl:bottom-44 2xl:bottom-72 left-[32%] opacity-[0.06] 2xl:opacity-[0.05]' />
+        <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute lg:bottom-14 xl:bottom-44 2xl:bottom-0 left-[32%] opacity-[0.06] 2xl:opacity-[0.05]' />
 
-        <div className='pathShadowBottom blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[200px] 2xl:w-[300px] h-[150px] xl:h-[200px] 2xl:h-[300px] absolute bottom-16 xl:bottom-36 2xl:bottom-52 left-[38%] xl:left-[36%] 2xl:left-[34%]' />
+        <div className='pathShadowBottom blur-[250px] 2xl:blur-[300px] w-[150px] xl:w-[200px] 2xl:w-[300px] h-[150px] xl:h-[200px] 2xl:h-[300px] absolute bottom-16 xl:bottom-36 2xl:bottom-0 left-[38%] xl:left-[36%] 2xl:left-[34%]' />
       </div>
     </div>
   );
