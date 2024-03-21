@@ -10,17 +10,21 @@ const WhyChooseSAT = () => {
       <div className='whyChooseSAT w-[400px] h-[1000px] absolute -top-52 -left-52 ' />
       <Container>
         {/* chooes sat  */}
-        <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-[50px]'>
+        <div className='lg:flex gap-[50px]'>
           {/*  why choose sat  */}
-          <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none'>
-            <div className='relative'>
-              <p className='text-[#FFF] font-inter text-[60px] font-bold mt-[81px] text-center lg:px-2 mb-20'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
-              <img className='mx-auto lg:absolute 2xl:w-[650px] xl:w-[510px] lg:w-[375px] 2xl:top-[170px] xl:top-[265px] lg:top-[415px] 2xl:left-[15px] xl:left-[20px] lg:left-[20px]' src={whyChooseImg} alt="" />
+          <div className='p-[1px] bg-gradient-to-b from-[#074933] to-[#03131010] rounded-[15px] lg:w-1/2 mb-16 lg:mb-0'>
+            <div className='bg-gradient-to-b from-[#091618] to-[#030e0a11] rounded-[15px] pt-[70px]'>
+              <div className='relative'>
+                <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
+                <img className='mt-[130px] 2xl:w-[70%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto 2xl:scale-125' src={whyChooseImg} alt="Image" />
 
+                {/* <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" /> */}
+              </div>
             </div>
           </div>
-          {/*  why choose two part  */}
-          <div>
+
+          {/* why choose two part  */}
+          <div className='lg:w-1/2'>
             <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mb-[30px]'>
               <div className='max-w-[518px] pl-[40px] pt-[40px] pb-[46px]'>
                 <img className='mb-6' src={whyChooseIcon1} alt="" />
@@ -28,7 +32,8 @@ const WhyChooseSAT = () => {
                 <p className='text-[#FFF] font-inter text-[18px]'>Take advantage of Solana's rapid transaction speed as $BART ensures swift and seamless transactions.</p>
               </div>
             </div>
-            <div className='bg-[#06201bab] border border-[#074933] rounded-[15px]'>
+
+            <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mt-16 lg:mt-0'>
               <div className='max-w-[488px] pl-[40px] pt-[40px] pb-[44px]'>
                 <img className='mb-6' src={whyChooseIcon2} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Community-Focused</p>
