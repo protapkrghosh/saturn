@@ -78,17 +78,17 @@ const Footer = () => {
       </div>
 
       {/* 2xl footer */}
-      <div className='hidden 2xl:block'>
+      <div className='hidden xl:block'>
         <div className='relative'>
           <div style={{ backgroundImage: `url(${circleImg2})` }} className='bg-center bg-no-repeat bg-contain 2xl:bg-cover min-h-[935px] 2xl:min-h-[1350px]'>
-            <img src={pathImg} alt="Image" className='w-[250px] md:w-[350px] lg:w-[430px] xl:w-[650px] 2xl:w-[900px] mx-auto pt-[400px]' />
+            <img src={pathImg} alt="Image" className='w-[250px] md:w-[350px] lg:w-[430px] xl:w-[650px] 2xl:w-[900px] mx-auto xl:pt-[300px] 2xl:pt-[400px]' />
 
             <p className='text-[#FFF] text-[19px] md:text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] font-inter font-semibold uppercase text-center w-[75%] md:w-[64%] xl:w-[64%] 2xl:w-[50%] mx-auto -mt-24 md:-mt-40 lg:-mt-52 xl:-mt-72 2xl:-mt-[350px]'>JOIN SAT AND LETS BARK OUR  WAY TO CRYPTO STARDOM  TOGETHER!</p>
 
           </div>
 
           {/* Footer menu */}
-          <div className='-mt-[217px]'>
+          <div className='xl:-mt-[165px] 2xl:-mt-[217px]'>
             <div className="max-w-[1670px] mx-auto 2xl:px-0 xl:px-24 lg:px-[70px] md:px-10 sm:px-2 px-4">
               <div className='lg:flex justify-between items-center py-6'>
                 <Link>
@@ -139,7 +139,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className='mt-[54px]'>
+          <div className='xl:mt-[17px] 2xl:mt-[54px]'>
             <p className='text-[#fff] text-center font-inter'>©{new Date().getFullYear()} All Rights reserved to $SAT Token</p>
           </div>
         </div>
