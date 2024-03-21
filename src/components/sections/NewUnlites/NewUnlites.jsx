@@ -1,6 +1,6 @@
 import Container from "../Container/Container";
 // import globe from "@/assets/unlitesAwait/Group479.png"
-import globe from "@/assets/unlitesAwait/Group41.png"
+import globe from "@/assets/unlitesAwait/Group79.png"
 // import globe from "@/assets/unlitesAwait/Group41.png"
 import earthImg from "@/assets/unlitesAwait/image1.png"
 import pathBg from "@/assets/aboutToken/group.png"
@@ -16,9 +16,9 @@ const NewUnlites = () => {
       <div className="lg:flex justify-between  items-center mt-20">
         {/* Globe Image */}
         <div className='lg:w-1/2 flex justify-start relative'>
-          <img src={globe} alt="Image" className='w-[300px] lg:w-[280px] xl:w-auto 2xl:w-[480px] h-[400px] xl:h-[510px] 2xl:h-auto -mb-32 md:-mb-52 lg:mb-0 mix-blend-screen' />
+          <img src={globe} alt="Image" className='w-[75%] md:w-[65%] lg:w-full xl:w-[90%] 2xl:w-[85%] lg:-ml-10 xl:ml-0 -mb-32 md:-mb-52 lg:mb-0 mix-blend-screen' />
 
-          <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[190px] 2xl:w-[240px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[195px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-5 2xl:left-9' />
+          {/* <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[190px] 2xl:w-[240px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[195px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-5 2xl:left-9' /> */}
         </div>
 
         {/* Sat wear */}
@@ -76,7 +76,7 @@ const NewUnlites = () => {
       </div>
 
       {/* Shadow */}
-      <div className="w-[300px] lg:w-[260px] xl:w-[400px] 2xl:w-[450px] h-[450px] md:h-[550px] 2xl:h-[600px] unlitShadow absolute left-0 top-96 md:top-52 lg:top-auto lg:bottom-40"/>
+      <div className="w-[300px] lg:w-[260px] xl:w-[400px] 2xl:w-[450px] h-[450px] md:h-[550px] 2xl:h-[600px] unlitShadow absolute left-0 top-96 md:top-52 lg:top-auto lg:bottom-40" />
     </div>
   );
 };
