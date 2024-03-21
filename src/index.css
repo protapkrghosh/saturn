@@ -70,9 +70,17 @@ body {
   mix-blend-mode: lighten;
 }
 
-/* Roadmap */
 .globeShadow {
   border-radius: 1326px;
+  opacity: 0.6;
+  background: #02B81C;
+  filter: blur(267px);
+  mix-blend-mode: lighten;
+}
+
+/* Why choose sat */
+.chooseShadow {
+  border-radius: 819.156px;
   opacity: 0.6;
   background: #02B81C;
   filter: blur(267px);

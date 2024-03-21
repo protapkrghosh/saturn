@@ -12,12 +12,14 @@ const WhyChooseSAT = () => {
         {/* chooes sat  */}
         <div className='lg:flex gap-[50px]'>
           {/*  why choose sat  */}
-          <div className='bg-[#06201b10] border border-[#074933] border-b-0 rounded-[15px] rounded-b-none lg:w-1/2 mb-16 lg:mb-0'>
-            <div className='relative'>
-              <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold mt-[80px] text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
-              <img className='mt-[114px] 2xl:w-[90%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto' src={whyChooseImg} alt="Image" />
+          <div className='p-[1px] bg-gradient-to-b from-[#074933] to-[#03131010] rounded-[15px] lg:w-1/2 mb-16 lg:mb-0'>
+            <div className='bg-gradient-to-b from-[#091618] to-[#030e0a11] rounded-[15px] pt-[70px]'>
+              <div className='relative'>
+                <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
+                <img className='mt-[100px] 2xl:w-[90%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto' src={whyChooseImg} alt="Image" />
 
-              {/* <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" /> */}
+                {/* <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" /> */}
+              </div>
             </div>
           </div>
 
