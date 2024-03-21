@@ -18,14 +18,16 @@ const AboutToken = () => {
         {/* About Contents */}
         <div className='lg:w-1/2'>
           <div className="max-w-[1620px] mx-auto 2xl:pl-[250px] xl:pl-24 lg:pl-16 md:pl-10 sm:pl-2 pl-4">
-            <h1 className='text-[#fff] text-[50px] md:text-[57px] lg:text-[44px] xl:text-[57px] 2xl:text-[58px] font-inter font-bold uppercase'>About <span className='text-[#40FE5B]'>$sat</span> token</h1>
+            <h1 className='text-[#fff] text-[50px] md:text-[57px] lg:text-[44px] xl:text-[57px] 2xl:text-[58px] font-inter font-bold'>About <span className='text-[#40FE5B]'>$SAT</span> Token</h1>
 
             <div className=' text-[#F4F4F4] text-[18px] font-inter font-normal space-y-4 mt-2 mb-10 2xl:w-[85%]'>
-              <p>Introducing $SAT, the memecoin inspired by the legendary Sat Simpson! Known for his prowess in navigating the complexities of De-Fi with unparalleled coolness, Sat Simpson serves as the muse behind this innovative cryptocurrency.</p>
+              <p>Welcome to $SAT, where community is not just a concept, but the very heartbeat of our token's ecosystem. We believe in the power of collective wisdom and participation, which is why community involvement is at the core of everything we do. From decision-making to shaping the future direction of $SAT, every voice matters.</p>
 
-              <p>$SAT isn't just another digital currency; it's a meme-worthy investment opportunity that's quickly gaining traction in the crypto arena. </p>
+              <p>But it's not just about governance – we love giving back to our community. That's why we host weekly raffles and giveaways.</p>
 
-              <p>$SAT is howling its way to the moon, capturing the attention of investors worldwide. Don't miss out on the chance to be part of this meme-orable journey! </p>
+              <p>Our team is diligently working on creating a bridge and swap platform, which will provide seamless interoperability between different blockchain networks, unlocking new possibilities for $SAT holders.</p>
+
+              <p>Exciting developments are on the horizon as well, with staking soon to be released. This not only incentivizes long-term commitment but also strengthens the security and stability of the $SAT ecosystem.</p>
             </div>
 
             <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
@@ -35,7 +37,7 @@ const AboutToken = () => {
         {/* Globe Image */}
         <div className='lg:w-1/2 flex justify-end relative'>
           <img src={globe} alt="Image" className='w-full 2xl:w-[850px] -mb-32 md:-mb-52 lg:mb-0' />
-          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10 animate-spin duration-3000' />
+          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10' />
         </div>
       </div>
 

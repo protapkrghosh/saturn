@@ -15,7 +15,7 @@ const Hodi = () => {
           <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px] globeShadow absolute left-[30%] md:bottom-16 lg:bottom-auto'/>
 
           <div className='text-center font-inter'>
-            <h1 className='text-[#fff] text-[60px] font-bold capitalize'>Hodl</h1>
+            <h1 className='text-[#fff] text-[60px] font-bold uppercase'>Hodl</h1>
             <p className='text-[#FCFCFC] text-[18px] font-normal py-10 md:w-[90%] xl:w-[70%] 2xl:w-[57%] mx-auto'>With $SAT, the market is not just bullish; it's downright howlish. Forget traditional charts; we're trading in memes and laughs. Join us as we transform the financial landscape into a comic strip, and let's howl all.</p>
 
             <div className='flex justify-center'>
