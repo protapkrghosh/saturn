@@ -19,7 +19,7 @@ const WhyChooseSAT = () => {
 
             </div>
           </div>
-          {/* why choose two part  */}
+          {/* why choose two part */}
           <div>
             <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mb-[30px]'>
               <div className='max-w-[518px] pl-[40px] pt-[40px] pb-[46px]'>
