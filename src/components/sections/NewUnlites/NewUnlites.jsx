@@ -1,6 +1,7 @@
 import Container from "../Container/Container";
 // import globe from "@/assets/unlitesAwait/Group479.png"
 import globe from "@/assets/unlitesAwait/Group41.png"
+// import globe from "@/assets/unlitesAwait/Group41.png"
 import earthImg from "@/assets/unlitesAwait/image1.png"
 import pathBg from "@/assets/aboutToken/group.png"
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
-import whyChooseImg from '@/assets/whyChooseSAT/Group_1000003467.png'
+import whyChooseImg from '@/assets/whyChooseSAT/Group80.png'
 import whyChooseIcon from '@/assets/whyChooseSAT/image_197-removebg-preview (1) 1.png'
 import whyChooseIcon1 from '@/assets/whyChooseSAT/Group2.png'
 import whyChooseIcon2 from '@/assets/whyChooseSAT/Black.png'
