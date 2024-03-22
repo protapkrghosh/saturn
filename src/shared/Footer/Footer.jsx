@@ -3,7 +3,7 @@ import circleImg from '@/assets/footer/Group21.png';
 import circleImg2 from '@/assets/footer/Group1.png';
 import pathImg from '@/assets/footer/path.png';
 import logo from '@/assets/logo.png';
-import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
 import { PiTelegramLogoThin } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -27,7 +27,7 @@ const Footer = () => {
           <div className='bg-[#07360F] -mt-[430px] md:-mt-[354px] lg:-mt-[295px] xl:-mt-[230px]'>
             <div className="max-w-[1670px] mx-auto 2xl:px-0 xl:px-24 lg:px-[70px] md:px-10 sm:px-2 px-4">
               <div className='lg:flex justify-between items-center py-6'>
-                <Link>
+                <Link to="home" smooth={true} offset={-30} duration={600} className='cursor-pointer'>
                   <img src={logo} alt="Image" className='w-[50px]' />
                 </Link>
 
@@ -35,23 +35,23 @@ const Footer = () => {
                 <div>
                   <ul className='lg:flex items-center space-y-3 lg:space-y-0 lg:space-x-10 my-5 lg:my-0'>
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#40FE5B] font-inter uppercase">Home</Link>
+                      <Link to="home" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#40FE5B] font-inter uppercase cursor-pointer">Home</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">About</Link>
+                      <Link to="aboutToken" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">About</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">Tokenomics</Link>
+                      <Link to="tokenomics" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">Tokenomics</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">How to buy</Link>
+                      <Link to="buy" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">How to buy</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">Roadmap</Link>
+                      <Link to="roadmap" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">Roadmap</Link>
                     </li>
                   </ul>
                 </div>
@@ -98,7 +98,7 @@ const Footer = () => {
           <div className='lg:-mt-[245px] xl:-mt-[165px] 2xl:-mt-[217px]'>
             <div className="max-w-[1670px] mx-auto 2xl:px-0 xl:px-24 lg:px-[70px] md:px-10 sm:px-2 px-4">
               <div className='lg:flex justify-between items-center py-6'>
-                <Link>
+                <Link to="home" smooth={true} offset={-30} duration={600} className='cursor-pointer'>
                   <img src={logo} alt="Image" className='w-[45px] xl:w-[50px]' />
                 </Link>
 
@@ -106,23 +106,23 @@ const Footer = () => {
                 <div>
                   <ul className='lg:flex items-center space-y-3 lg:space-y-0 lg:space-x-10 my-5 lg:my-0'>
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#40FE5B] font-inter uppercase">Home</Link>
+                      <Link to="home" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#40FE5B] font-inter uppercase cursor-pointer">Home</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">About</Link>
+                      <Link to="aboutToken" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">About</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">Tokenomics</Link>
+                      <Link to="tokenomics" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">Tokenomics</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">How to buy</Link>
+                      <Link to="buy" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">How to buy</Link>
                     </li>
 
                     <li>
-                      <Link to="/" className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase">Roadmap</Link>
+                      <Link to="roadmap" smooth={true} offset={-30} duration={600} className="2xl:text-[18px] text-[#A5A8B9] hover:text-[#40FE5B] font-inter duration-300 uppercase cursor-pointer">Roadmap</Link>
                     </li>
                   </ul>
                 </div>

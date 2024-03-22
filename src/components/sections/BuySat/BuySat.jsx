@@ -7,7 +7,7 @@ import icon4 from '@/assets/howToBuy/image203.png'
 
 const BuySat = () => {
   return (
-    <div className="pt-20 pb-28 relative overflow-hidden">
+    <div className="pt-20 pb-28 relative overflow-hidden" id="buy">
       {/* Shadow */}
       <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenShadow absolute right-0" />
 

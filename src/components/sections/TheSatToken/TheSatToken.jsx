@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const TheSatToken = () => {
   return (
-    <>
+    <div id='SatToken'>
       <Container>
         <div className='2xl:flex xl:flex lg:flex md:flex-none justify-center items-center 2xl:gap-20 xl:gap-20 lg:gap-16 relative 2xl:-ml-40'>
           {/*  THE SAT Token images  */}
@@ -52,7 +52,7 @@ const TheSatToken = () => {
           <div className='w-[300px] md:w-[500px] lg:w-[400px] xl:w-[700px] 2xl:w-[800px] h-[300px] 2xl:h-[400px] theSatShadow absolute left-10 bottom-[500px] md:bottom-96 lg:bottom-10 xl:bottom-0' />
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 
