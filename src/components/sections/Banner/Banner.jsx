@@ -20,9 +20,9 @@ const Banner = () => {
       <div className='absolute top-20 md:top-32 lg:top-32 xl:top-40 2xl:top-52 w-full'>
         <Container>
           <div>
-            <h1 className='text-[86px] lg:text-[100px] 2xl:text-[120px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
+            <h1 className='text-[80px] md:text-[86px] lg:text-[100px] 2xl:text-[120px] text-white text-center font-bebasNeue font-normal tracking-wider uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
 
-            <p className='text-[18px] text-white font-inter text-center lg:w-[93%] xl:w-[70%] 2xl:w-[56%] mx-auto mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
+            <p className='text-[18px] text-white font-inter text-center lg:w-[75%] xl:w-[58%] 2xl:w-[47%] mx-auto mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
 
             <div className='flex justify-center'>
               <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
