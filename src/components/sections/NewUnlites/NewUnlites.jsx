@@ -18,7 +18,7 @@ const NewUnlites = () => {
         <div className='lg:w-1/2 flex justify-start relative 2xl:-ml-40'>
           <img src={globe} alt="Image" className='w-[75%] md:w-[65%] lg:w-full xl:w-[90%] 2xl:w-[85%] lg:-ml-10 xl:ml-0 -mb-32 md:-mb-52 lg:mb-0 mix-blend-screen animate-spin duration-3000' />
 
-          <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[190px] 2xl:w-[280px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[195px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-5 2xl:left-48' />
+          <img src={earthImg} alt="Image" className='w-[150px] md:w-[150px] lg:w-[140px] xl:w-[150px] 2xl:w-[280px] absolute bottom-[23px] md:-bottom-[55px] lg:bottom-[155px] xl:bottom-[148px] 2xl:bottom-[265px] left-5 md:left-7 lg:left-5 xl:left-[112px] 2xl:left-48' />
         </div>
 
         {/* Sat wear */}
@@ -44,10 +44,10 @@ const NewUnlites = () => {
               <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-[208px] ml-10 xl:ml-16">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">Voting</h3>
-                  <p className="text-[#a6aaae] text-[17.5px] 2xl:max-w-[75%]">Shape the community's future by participating in important decisions using your $SAT.</p>
+                  <p className="text-[#a6aaae] text-[17.5px] xl:max-w-[80%] 2xl:max-w-[75%]">Shape the community's future by participating in important decisions using your $SAT.</p>
                 </div>
 
-                <div className="font-inter">
+                <div className="font-inter xl:-ml-9 2xl:ml-0">
                   <h3 className="text-[#FFF] text-[25px] mb-6">Staking</h3>
                   <p className="text-[#a6aaae] text-[17.5px]">Multiply your holdings by staking $SAT tokens and earning rewards.</p>
                 </div>
