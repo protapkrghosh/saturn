@@ -39,7 +39,7 @@ const AboutToken = () => {
         <div className='lg:w-1/2 flex justify-end 2xl:justify-center relative mt-24 lg:mt-0 mb-52 md:mb-72 lg:mb-0'>
           <img src={globe} alt="Image" className='w-[60%] lg:w-[80%] xl:w-[65%] 2xl:w-[50%] -mb-32 md:-mb-52 lg:mb-0' />
 
-          {/* <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[260px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[590px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-10' /> */}
+          <img src={earth} alt="Image" className='w-[120px] md:w-[200px] lg:w-[150px] xl:w-[200px] 2xl:w-[185px] absolute bottom-[175px] md:bottom-[340px] lg:bottom-[360px] xl:bottom-[473px] 2xl:bottom-[180px] right-6 md:right-14 lg:right-8 xl:right-10 2xl:right-[385px]' />
         </div>
       </div>
 
