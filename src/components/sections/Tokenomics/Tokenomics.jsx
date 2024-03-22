@@ -18,7 +18,7 @@ const Tokenomics = () => {
           <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenomicsShoadow absolute top-[-400px] left-32" />
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
-            <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
+            <img className='lg:-ml-24 md:ml-20 animate-spin duration-3000' src={tokenRound} alt="image" />
             <img className='w-[95px] md:w-[125px] lg:w-[110px] xl:w-[140px] 2xl:w-[150px] absolute left-[150px] md:left-[290px] lg:left-[72px] xl:left-[125px] 2xl:left-[175px] bottom-[840px] md:bottom-[905px] lg:bottom-[415px] xl:bottom-[332px] 2xl:bottom-[304px]' src={earth} alt="image" />
           </div>
 
