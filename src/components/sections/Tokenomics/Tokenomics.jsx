@@ -11,7 +11,7 @@ import CountUp from 'react-countup';
 
 const Tokenomics = () => {
   return (
-    <div className='overflow-hidden py-[130px]'>
+    <div className='overflow-hidden py-[130px]' id='tokenomics'>
       <Container>
         <div className='lg:flex relative'>
           {/* Shadow */}
