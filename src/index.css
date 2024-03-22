@@ -83,8 +83,15 @@ body {
   border-radius: 819.156px;
   opacity: 0.6;
   background: #02B81C;
-  filter: blur(267px);
+  filter: blur(200px);
   mix-blend-mode: lighten;
+}
+
+.whyChooseSAT {
+  border-radius: 819.156px;
+  opacity: 0.6;
+  background: #02B81C;
+  filter: blur(267px);
 }
 
 /* NewUnlites */
@@ -94,13 +101,6 @@ body {
   background: #02b81d6e;
   filter: blur(267px);
   mix-blend-mode: lighten;
-}
-
-.whyChooseSAT {
-  border-radius: 819.156px;
-  opacity: 0.6;
-  background: #02B81C;
-  filter: blur(267px);
 }
 
 /* Footer */

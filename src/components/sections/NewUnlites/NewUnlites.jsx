@@ -7,7 +7,7 @@ import pathBg from "@/assets/aboutToken/group.png"
 
 const NewUnlites = () => {
   return (
-    <div className="mt-32 pb-32 relative">
+    <div className="mt-40 pb-32 relative">
       <Container>
         <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold'>New <span className="text-[#40FE5B]">utilities</span> await</h1>
       </Container>

@@ -3,10 +3,14 @@ import Container from '../Container/Container';
 import whyChooseImg from '@/assets/whyChooseSAT/Group80.png'
 import whyChooseIcon1 from '@/assets/whyChooseSAT/Group2.png'
 import whyChooseIcon2 from '@/assets/whyChooseSAT/Black.png'
+import symbols from '@/assets/banner/symbols.png'
+import globe from '@/assets/hodI/Group.png'
+import line from '@/assets/hodI/Rectangle9.png'
+import { Button } from '@/components/ui/button';
 
 const WhyChooseSAT = () => {
   return (
-    <div className='pt-[189px] pb-[216px] relative overflow-hidden'>
+    <div className='pt-[189px] relative overflow-hidden'>
       <div className='whyChooseSAT w-[400px] h-[1000px] absolute -top-52 -left-52 ' />
       <Container>
         {/* chooes sat  */}
@@ -25,7 +29,7 @@ const WhyChooseSAT = () => {
 
           {/* why choose two part  */}
           <div className='lg:w-1/2'>
-            <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mb-[30px]'>
+            <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mb-[50px]'>
               <div className='max-w-[518px] pl-[40px] pt-[40px] pb-[46px]'>
                 <img className='mb-6' src={whyChooseIcon1} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Solana's Speed</p>
@@ -33,7 +37,7 @@ const WhyChooseSAT = () => {
               </div>
             </div>
 
-            <div className='bg-[#06201bab] border border-[#074933] rounded-[15px] mt-16 lg:mt-0'>
+            <div className='bg-[#06201b70] border border-[#074933] rounded-[15px] mt-16 lg:mt-0'>
               <div className='max-w-[488px] pl-[40px] pt-[40px] pb-[44px]'>
                 <img className='mb-6' src={whyChooseIcon2} alt="" />
                 <p className='mb-4 text-[#FFF] font-inter text-[25px] font-bold'>Community-Focused</p>
@@ -45,6 +49,39 @@ const WhyChooseSAT = () => {
           </div>
         </div>
       </Container>
+
+      {/* Shadow */}
+      <div className='w-40 h-[350px] md:h-[450px] lg:h-[650px] chooseShadow absolute bottom-72 right-0'/>
+
+      {/* Hodl Section */}
+      <div className='overflow-hidden mt-44'>
+        <Container>
+          <img src={line} alt="Image" className='mb-9 w-full mx-auto' />
+        </Container>
+
+        <div style={{ backgroundImage: `url(${globe})` }} className='bg-no-repeat bg-center relative'>
+          {/* Shadow */}
+          <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px]  absolute left-[30%] md:bottom-16 lg:bottom-auto' />
+
+          <div className='text-center font-inter'>
+            <h1 className='text-[#fff] text-[60px] font-bold uppercase'>Hodl</h1>
+            <p className='text-[#FCFCFC] text-[18px] font-normal py-10 md:w-[90%] xl:w-[70%] 2xl:w-[57%] mx-auto'>With $SAT, the market is not just bullish; it's downright howlish. Forget traditional charts; we're trading in memes and laughs. Join us as we transform the financial landscape into a comic strip, and let's howl all.</p>
+
+            <div className='flex justify-center'>
+              <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
+                <span className="flex justify-center items-center">
+                  <p className='text-[18px] 2xl:text-[19px] font-inter font-normal uppercase mr-2'>Buy now</p>
+                  <img src={symbols} alt="Image" className='w-[27px] 2xl:w-[28px] group-hover:-mt-2  duration-300' />
+                </span>
+              </Button>
+            </div>
+          </div>
+
+          <Container>
+            <img src={line} alt="Image" className='pt-14 w-full mx-auto' />
+          </Container>
+        </div>
+      </div>
     </div>
   );
 };
