@@ -33,7 +33,7 @@ const Tokenomics = () => {
                   <img src={tokenIcon1} alt="imges" />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Liquidity  Pool</p>
+                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Liquidity</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>35 billion $SAT</p>
                 </div>
               </div>
