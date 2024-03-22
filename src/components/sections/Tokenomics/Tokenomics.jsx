@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
-import tokenRound from '@/assets/Tokenomics/Group480.png';
+import tokenRound from '@/assets/Tokenomics/Group 1000003459.png';
 import earth from '@/assets/Tokenomics/image_197-removebg-preview (1) 2.png';
 import tokenIcon1 from '@/assets/Tokenomics/Group 1000003460.png';
 import tokenIcon2 from '@/assets/Tokenomics/Group 1000003461.png';
@@ -18,7 +18,8 @@ const Tokenomics = () => {
           <div className="w-[300px] xl:w-[500px] 2xl:w-[800px] h-[300px] tokenomicsShoadow absolute top-[-400px] left-32" />
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
-            <img className='lg:-ml-24 md:ml-20' src={tokenRound} alt="image" />
+            <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
+            <img className='2xl:w-[150px] absolute 2xl:left-[175px] 2xl:bottom-[304px]' src={earth} alt="image" />
           </div>
 
           {/* catagory section  */}
