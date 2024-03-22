@@ -76,7 +76,7 @@ const Roadmap = () => {
                 </div>
                 <div className='flex items-center'>
                   <div className='w-3 h-3 bg-[#82D173] rounded-full mr-3' />
-                  <p>NFT Airdrop</p>
+                  <p>First utility release</p>
                 </div>
               </div>
             </div>
