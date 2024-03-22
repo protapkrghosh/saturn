@@ -33,23 +33,23 @@ const NewUnlites = () => {
                 </div>
 
                 <div className="font-inter">
-                  <h3 className="text-[#FFF] text-[25px] mb-6">SAT Wear</h3>
-                  <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
+                  <h3 className="text-[#FFF] text-[25px] mb-6">SAT Raffle</h3>
+                  <p className="text-[#a6aaae] text-[17.5px]">Engage in thrilling raffle events with your $SAT tokens.</p>
                 </div>
               </div>
             </div>
 
             {/* Section Two */}
             <div className="border-y border-[#074933] sm:ml-2 ml-4 md:ml-10 lg:ml-0 py-10 my-12">
-              <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-64 ml-10 xl:ml-16">
+              <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-[208px] ml-10 xl:ml-16">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">Voting</h3>
-                  <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
+                  <p className="text-[#a6aaae] text-[17.5px] 2xl:w-[87%]">Shape the community's future by participating in important decisions using your $SAT.</p>
                 </div>
 
                 <div className="font-inter">
-                  <h3 className="text-[#FFF] text-[25px] mb-6">Staking Pool Wear</h3>
-                  <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
+                  <h3 className="text-[#FFF] text-[25px] mb-6">Staking</h3>
+                  <p className="text-[#a6aaae] text-[17.5px]">Multiply your holdings by staking $SAT tokens and earning rewards.</p>
                 </div>
               </div>
             </div>
@@ -59,12 +59,12 @@ const NewUnlites = () => {
               <div className="flex justify-between gap-x-8 xl:gap-x-32 2xl:gap-x-64 ml-10 xl:ml-16 z-30">
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">SAT Bridge</h3>
-                  <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
+                  <p className="text-[#a6aaae] text-[17.5px] 2xl:w-[94%]">Connect $SAT with various blockchains for expanded possibilities.</p>
                 </div>
 
                 <div className="font-inter">
                   <h3 className="text-[#FFF] text-[25px] mb-6">Mini Games</h3>
-                  <p className="text-[#a6aaae] text-[17.5px]">Effortlessly trade $SAT tokens on our decentralized exchange.</p>
+                  <p className="text-[#a6aaae] text-[17.5px]">Enjoy entertaining mini-games while earning $SAT rewards.</p>
                 </div>
               </div>
 
