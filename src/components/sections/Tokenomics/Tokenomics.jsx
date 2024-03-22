@@ -19,7 +19,7 @@ const Tokenomics = () => {
           {/* imges section  */}
           <div className='lg:w-[50%] md:w-[80%]'>
             <img className='lg:-ml-24 md:ml-20 animate-spin duration-2000' src={tokenRound} alt="image" />
-            <img className='2xl:w-[150px] absolute 2xl:left-[175px] 2xl:bottom-[304px]' src={earth} alt="image" />
+            <img className='xl:w-[140px] 2xl:w-[150px] absolute xl:left-[125px] 2xl:left-[175px] xl:bottom-[332px] 2xl:bottom-[304px]' src={earth} alt="image" />
           </div>
 
           {/* catagory section  */}
