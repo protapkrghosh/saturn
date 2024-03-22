@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
-import whyChooseImg from '@/assets/whyChooseSAT/Group80.png'
+import whyChooseImg from '@/assets/whyChooseSAT/Group480.png'
+import whyChooseGlobeImg from '@/assets/whyChooseSAT/image197.png'
 import whyChooseIcon1 from '@/assets/whyChooseSAT/Group2.png'
 import whyChooseIcon2 from '@/assets/whyChooseSAT/Black.png'
 import symbols from '@/assets/banner/symbols.png'
@@ -22,7 +23,7 @@ const WhyChooseSAT = () => {
                 <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
                 <img className='mt-[130px] 2xl:w-[70%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto 2xl:scale-125' src={whyChooseImg} alt="Image" />
 
-                {/* <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" /> */}
+                <img className='absolute 2xl:w-auto xl:w-[220px] lg:w-[155px] md:w-[200px] w-[150px] 2xl:top-[320px] xl:top-[330px] lg:top-[300px] md:top-[340px] top-[390px] 2xl:left-[215px] xl:left-[163px] lg:left-[135px] md:left-[240px] left-[115px] animate-spin duration-2000' src={whyChooseGlobeImg} alt="Image" />
               </div>
             </div>
           </div>
@@ -49,7 +50,7 @@ const WhyChooseSAT = () => {
       </Container>
 
       {/* Shadow */}
-      <div className='w-40 h-[350px] md:h-[450px] lg:h-[650px] chooseShadow absolute bottom-72 right-0'/>
+      <div className='w-40 h-[350px] md:h-[450px] lg:h-[650px] chooseShadow absolute bottom-72 right-0' />
 
       {/* Hodl Section */}
       <div className='overflow-hidden mt-44'>
