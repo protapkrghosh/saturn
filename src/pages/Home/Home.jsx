@@ -19,7 +19,6 @@ const Home = () => {
       <BuySat />
       <Roadmap />
       <WhyChooseSAT />
-      <Hodi />
       <NewUnlites />
     </>
   );
