@@ -8,7 +8,7 @@ import { MdArrowOutward } from "react-icons/md";
 
 const Banner = () => {
   return (
-    <div className='relative overflow-hidden'>
+    <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
       <div className='h-[70vh] md:h-[120vh] 2xl:h-[145vh]'>
         <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' />

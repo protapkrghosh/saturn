@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 const AboutToken = () => {
   return (
-    <div className='relative -pt-20 md:-pt-44 lg:pt-40  mb-28'>
+    <div className='relative -pt-20 md:-pt-44 lg:pt-40  mb-28' id='aboutToken'>
       {/* Top path shadow */}
       <div className='hidden lg:block'>
         <img src={pathBg} alt="Image" className='lg:w-[250px] xl:w-[300px] 2xl:w-[400px] absolute top-16 2xl:top-0 lg:left-[45%] xl:left-[45%] 2xl:left-[40%] opacity-[0.06]' />
