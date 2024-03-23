@@ -60,7 +60,7 @@ const WhyChooseSAT = () => {
 
         <div style={{ backgroundImage: `url(${globe})` }} className='bg-no-repeat bg-center relative'>
           {/* Shadow */}
-          <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px]  absolute left-[30%] md:bottom-16 lg:bottom-auto' />
+          {/* <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px] absolute left-[30%] md:bottom-16 lg:bottom-auto' /> */}
 
           <div className='text-center font-inter'>
             <h1 className='text-[#fff] text-[60px] font-bold uppercase'>Hodl</h1>
