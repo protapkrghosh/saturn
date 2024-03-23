@@ -18,7 +18,7 @@ const NewUnlites = () => {
         <div className='lg:w-1/2 flex justify-start relative 2xl:-ml-40'>
           <img src={globe} alt="Image" className='w-[75%] md:w-[65%] lg:w-full xl:w-[90%] 2xl:w-[85%] lg:-ml-10 xl:ml-0 -mb-32 md:-mb-52 lg:mb-0 mix-blend-screen animate-spin duration-3000 mx-auto lg:mx-0' />
 
-          <img src={earthImg} alt="Image" className='w-[140px] md:w-[200px] lg:w-[120px] xl:w-[150px] 2xl:w-[280px] absolute -bottom-[8px] md:-bottom-[8px] lg:bottom-[110px] xl:bottom-[148px] 2xl:bottom-[260px] left-[140px] md:left-[282px] lg:left-10 xl:left-[112px] 2xl:left-48' />
+          <img src={earthImg} alt="Image" className='w-[125px] md:w-[200px] lg:w-[120px] xl:w-[150px] 2xl:w-[280px] absolute -bottom-[15px] md:-bottom-[8px] lg:bottom-[110px] xl:bottom-[148px] 2xl:bottom-[260px] left-[135px] md:left-[282px] lg:left-10 xl:left-[112px] 2xl:left-48' />
         </div>
 
         {/* Sat wear */}
