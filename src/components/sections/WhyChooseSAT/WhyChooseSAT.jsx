@@ -23,7 +23,7 @@ const WhyChooseSAT = () => {
                 <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
                 <img className='mt-[130px] 2xl:w-[70%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto 2xl:scale-125' src={whyChooseImg} alt="Image" />
 
-                <img className='absolute 2xl:w-auto xl:w-[220px] lg:w-[155px] md:w-[200px] w-[150px] 2xl:top-[320px] xl:top-[330px] lg:top-[300px] md:top-[340px] top-[390px] 2xl:left-[215px] xl:left-[163px] lg:left-[135px] md:left-[240px] left-[115px] animate-spin duration-2000' src={whyChooseGlobeImg} alt="Image" />
+                <img className='absolute 2xl:w-auto xl:w-[220px] lg:w-[155px] md:w-[200px] w-[140px] 2xl:top-[320px] xl:top-[330px] lg:top-[300px] md:top-[340px] top-[475px] 2xl:left-[215px] xl:left-[163px] lg:left-[135px] md:left-[240px] left-[110px] animate-spin duration-2000' src={whyChooseGlobeImg} alt="Image" />
               </div>
             </div>
           </div>
