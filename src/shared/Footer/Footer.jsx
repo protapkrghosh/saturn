@@ -58,7 +58,7 @@ const Footer = () => {
 
                 {/* Action button */}
                 <div className='flex items-center'>
-                  <a href="https://web.telegram.org/k/#@satcoinsolana" target='_blank' className='text-white mr-4'>
+                  <a href="http://t.me/satcoinsolana" target='_blank' className='text-white mr-4'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-4 rounded-[8px] duration-300'>
                       <PiTelegramLogoThin className='text-[25px]' />
                     </div>
@@ -129,7 +129,7 @@ const Footer = () => {
 
                 {/* Action button */}
                 <div className='flex items-center'>
-                  <a href="https://web.telegram.org/k/#@satcoinsolana" target='_blank' className='text-white mr-4'>
+                  <a href="http://t.me/satcoinsolana" target='_blank' className='text-white mr-4'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-2 xl:p-4 rounded-[8px] duration-300'>
                       <PiTelegramLogoThin className='text-[25px]' />
                     </div>

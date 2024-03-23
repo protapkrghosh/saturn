@@ -45,7 +45,9 @@ const TheSatToken = () => {
               <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Launching staking very soon</p>
             </div>
 
-            <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
+            <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+              <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
+            </a>
           </div>
 
           {/* Shadow */}
