@@ -63,22 +63,22 @@ const Banner = () => {
   return (
     <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
-      <div className='h-[70vh] md:h-[145vh] 2xl:h-[130vh]'>
+      <div className='h-[170vh] md:h-[260vh] lg:h-[145vh] 2xl:h-[130vh]'>
         {/* <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' /> */}
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
         <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
         <img src={pathImg} alt="Image" className='opacity-[0.06] absolute top-0 left-0' />
       </div>
 
-      <div className='absolute top-20 md:top-32 lg:top-16 w-full'>
+      <div className='absolute top-12 md:top-32 lg:top-16 w-full'>
         <Container>
           <div className='lg:flex justify-between items-center'>
-            <div className='lg:w-1/2'>
-              <h1 className='text-[80px] md:text-[86px] lg:text-[90px] xl:text-[117px] 2xl:text-[130px] text-white text-start font-bebasNeue font-normal tracking-wider lg:leading-[95px] xl:leading-[130px] 2xl:leading-[130px] uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
+            <div className='lg:w-1/2 mb-24 lg:mb-0'>
+              <h1 className='text-[76px] md:text-[86px] lg:text-[90px] xl:text-[117px] 2xl:text-[130px] text-white text-center lg:text-start font-bebasNeue font-normal tracking-wider leading-[95px] md:leading-[130px] lg:leading-[95px] xl:leading-[130px] 2xl:leading-[130px] uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
 
-              <p className='text-[18px] text-white font-inter text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] lg:mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
+              <p className='md:text-[18px] text-white font-inter text-center lg:text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
 
-              <div className='flex justify-start'>
+              <div className='flex justify-center lg:justify-start'>
                 <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
                   <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
                     <span className="flex justify-center items-center">
