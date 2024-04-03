@@ -64,7 +64,7 @@ const Banner = () => {
   return (
     <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
-      <div className='h-[170vh] md:h-[260vh] lg:h-[145vh] 2xl:h-[130vh]'>
+      <div className='h-[170vh] md:h-[265vh] lg:h-[185vh] xl:h-[160vh] 2xl:h-[130vh]'>
         {/* <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' /> */}
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
         <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
@@ -239,7 +239,7 @@ const Banner = () => {
                           ) : (
                             <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={ellipse} alt="Image" className='w-[32px]' />
-                                <p className='text-white font-normal ml-2 uppercase'>SOL</p>
+                              <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                             </div>
                           )
                         }
