@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
-import whyChooseImg from '@/assets/whyChooseSAT/Group80.png'
+import whyChooseImg from '@/assets/whyChooseSAT/Group480.png'
+import whyChooseGlobeImg from '@/assets/whyChooseSAT/image197.png'
 import whyChooseIcon1 from '@/assets/whyChooseSAT/Group2.png'
 import whyChooseIcon2 from '@/assets/whyChooseSAT/Black.png'
 import symbols from '@/assets/banner/symbols.png'
@@ -22,7 +23,7 @@ const WhyChooseSAT = () => {
                 <p className='text-[#FFF] font-inter text-[60px] lg:text-[44px] xl:text-[55px] 2xl:text-[60px] font-bold text-center'>Why Choose <span className='text-[#40FE5B]'>$SAT</span></p>
                 <img className='mt-[130px] 2xl:w-[70%] xl:w-[475px] lg:w-[380px] md:w-[70%] w-[85%] mx-auto 2xl:scale-125' src={whyChooseImg} alt="Image" />
 
-                {/* <img className='absolute 2xl:w-auto xl:w-[225px] lg:w-[155px] 2xl:top-[345px] xl:top-[320px] lg:top-[375px] 2xl:left-[205px] xl:left-[170px] lg:left-[135px]' src={whyChooseIcon} alt="" /> */}
+                <img className='absolute 2xl:w-auto xl:w-[220px] lg:w-[155px] md:w-[200px] w-[140px] 2xl:top-[320px] xl:top-[330px] lg:top-[300px] md:top-[340px] top-[475px] 2xl:left-[215px] xl:left-[163px] lg:left-[135px] md:left-[240px] left-[110px] animate-spin duration-2000' src={whyChooseGlobeImg} alt="Image" />
               </div>
             </div>
           </div>
@@ -49,7 +50,7 @@ const WhyChooseSAT = () => {
       </Container>
 
       {/* Shadow */}
-      <div className='w-40 h-[350px] md:h-[450px] lg:h-[650px] chooseShadow absolute bottom-72 right-0'/>
+      <div className='w-40 h-[350px] md:h-[450px] lg:h-[650px] chooseShadow absolute bottom-72 right-0' />
 
       {/* Hodl Section */}
       <div className='overflow-hidden mt-44'>
@@ -59,19 +60,21 @@ const WhyChooseSAT = () => {
 
         <div style={{ backgroundImage: `url(${globe})` }} className='bg-no-repeat bg-center relative'>
           {/* Shadow */}
-          <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px]  absolute left-[30%] md:bottom-16 lg:bottom-auto' />
+          {/* <div className='w-[280px] lg:w-[500px] h-[180px] lg:h-[250px] absolute left-[30%] md:bottom-16 lg:bottom-auto' /> */}
 
           <div className='text-center font-inter'>
             <h1 className='text-[#fff] text-[60px] font-bold uppercase'>Hodl</h1>
             <p className='text-[#FCFCFC] text-[18px] font-normal py-10 md:w-[90%] xl:w-[70%] 2xl:w-[57%] mx-auto'>With $SAT, the market is not just bullish; it's downright howlish. Forget traditional charts; we're trading in memes and laughs. Join us as we transform the financial landscape into a comic strip, and let's howl all.</p>
 
             <div className='flex justify-center'>
-              <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
-                <span className="flex justify-center items-center">
-                  <p className='text-[18px] 2xl:text-[19px] font-inter font-normal uppercase mr-2'>Buy now</p>
-                  <img src={symbols} alt="Image" className='w-[27px] 2xl:w-[28px] group-hover:-mt-2  duration-300' />
-                </span>
-              </Button>
+              <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+                <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
+                  <span className="flex justify-center items-center">
+                    <p className='text-[18px] 2xl:text-[19px] font-inter font-normal uppercase mr-2'>Buy now</p>
+                    <img src={symbols} alt="Image" className='w-[27px] 2xl:w-[28px] group-hover:-mt-2  duration-300' />
+                  </span>
+                </Button>
+              </a>
             </div>
           </div>
 

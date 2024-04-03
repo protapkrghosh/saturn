@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
 
           {/* Footer menu */}
-          <div className='bg-[#07360F] -mt-[430px] md:-mt-[354px] lg:-mt-[295px] xl:-mt-[230px]'>
+          <div className='bg-[#07360F] -mt-[440px] md:-mt-[354px] lg:-mt-[295px] xl:-mt-[230px]'>
             <div className="max-w-[1670px] mx-auto 2xl:px-0 xl:px-24 lg:px-[70px] md:px-10 sm:px-2 px-4">
               <div className='lg:flex justify-between items-center py-6'>
                 <Link to="home" smooth={true} offset={-30} duration={600} className='cursor-pointer'>
@@ -58,13 +58,13 @@ const Footer = () => {
 
                 {/* Action button */}
                 <div className='flex items-center'>
-                  <a href="" className='text-white mr-4'>
+                  <a href="http://t.me/satcoinsolana" target='_blank' className='text-white mr-4'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-4 rounded-[8px] duration-300'>
                       <PiTelegramLogoThin className='text-[25px]' />
                     </div>
                   </a>
 
-                  <a href="" className='text-white'>
+                  <a href="https://twitter.com/SatCoinSolana" target='_blank' className='text-white'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-4 rounded-[8px] duration-300'>
                       <FaXTwitter className='text-[25px]' />
                     </div>
@@ -129,13 +129,13 @@ const Footer = () => {
 
                 {/* Action button */}
                 <div className='flex items-center'>
-                  <a href="" className='text-white mr-4'>
+                  <a href="http://t.me/satcoinsolana" target='_blank' className='text-white mr-4'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-2 xl:p-4 rounded-[8px] duration-300'>
                       <PiTelegramLogoThin className='text-[25px]' />
                     </div>
                   </a>
 
-                  <a href="" className='text-white'>
+                  <a href="https://twitter.com/SatCoinSolana" target='_blank' className='text-white'>
                     <div className='bg-[#02B81C] hover:bg-[#349e44] p-2 xl:p-4 rounded-[8px] duration-300'>
                       <FaXTwitter className='text-[25px]' />
                     </div>
