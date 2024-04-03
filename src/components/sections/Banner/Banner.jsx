@@ -53,7 +53,7 @@ const Banner = () => {
       return;
     }
     timerComponents.push(
-      <span key={interval} className="px-[35px] md:px-[49.6px] lg:px-[49.5px] xl:px-[48px] 2xl:px-[48px]">
+      <span key={interval} className="px-[37px] md:px-[48px] lg:px-[49.5px] xl:px-[49px] 2xl:px-[49px]">
         <span className="font-bold text-[21px] md:text-[22px]">
           {timeLeft[interval]}
         </span>{" "}
@@ -64,7 +64,7 @@ const Banner = () => {
   return (
     <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
-      <div className='h-[170vh] md:h-[265vh] lg:h-[185vh] xl:h-[160vh] 2xl:h-[130vh]'>
+      <div className='h-[175vh] md:h-[265vh] lg:h-[185vh] xl:h-[160vh] 2xl:h-[130vh]'>
         {/* <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' /> */}
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
         <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
@@ -73,8 +73,8 @@ const Banner = () => {
 
       <div className='absolute top-12 md:top-32 lg:top-16 w-full'>
         <Container>
-          <div className='lg:flex justify-between items-center'>
-            <div className='lg:w-1/2 mb-24 lg:mb-0'>
+          <div className='flex flex-col-reverse lg:flex-row justify-between items-center'>
+            <div className='lg:w-1/2 mt-24 lg:mt-0'>
               <h1 className='text-[76px] md:text-[86px] lg:text-[90px] xl:text-[117px] 2xl:text-[130px] text-white text-center lg:text-start font-bebasNeue font-normal tracking-wider leading-[95px] md:leading-[130px] lg:leading-[95px] xl:leading-[130px] 2xl:leading-[130px] uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
 
               <p className='md:text-[18px] text-white font-inter text-center lg:text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
@@ -100,7 +100,7 @@ const Banner = () => {
 
                   {/* Dynamic Timer */}
                   <div className='relative'>
-                    <div className='text-[#F5F6F7] flex justify-center absolute top-4 left-[-5px] md:left-5 lg:left-[-20px] xl:left-5'>
+                    <div className='text-[#F5F6F7] flex justify-center absolute top-4 left-[-5px] md:-left-4 lg:left-[-20px] xl:left-5'>
                       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                     </div>
 
@@ -220,7 +220,7 @@ const Banner = () => {
                         {/* <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button> */}
 
                         <button onClick={() => setOpen(!open)}>
-                          <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[50.4%] md:left-[47%]' />
+                          <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[45%] md:left-[47%]' />
                         </button>
                       </div>
                     </div>
