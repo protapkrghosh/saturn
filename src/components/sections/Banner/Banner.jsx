@@ -18,6 +18,7 @@ import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
 
 const Banner = () => {
+  const [open, setOpen] = useState(true);
 
   const calculateTimeLeft = () => {
     const difference = +new Date("2024-04-24") - +new Date();
@@ -179,7 +180,6 @@ const Banner = () => {
                         </div>
 
                         <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" />
-                        {/* <div className='h-3 bg-gradient-to-l from-[#F4F914] to-[#19C5E2] rounded-[70px] mt-[6px]' /> */}
                       </div>
                     </div>
 
@@ -193,10 +193,19 @@ const Banner = () => {
 
                     {/* SOL Input */}
                     <div className='relative'>
-                      <div className='flex items-center absolute mt-[3px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
-                        <img src={ellipse} alt="Image" className='w-[32px]' />
-                        <p className='text-white font-normal ml-2 uppercase'>SOL</p>
-                      </div>
+                      {
+                        open ? (
+                          <div className='flex items-center absolute mt-[3px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
+                            <img src={ellipse} alt="Image" className='w-[32px]' />
+                            <p className='text-white font-normal ml-2 uppercase'>SOL</p>
+                          </div>
+                        ) : (
+                          <div className='flex items-center absolute mt-[3px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
+                            <img src={logoImg} alt="Image" className='w-[32px]' />
+                            <p className='text-white font-normal ml-2 uppercase'>Sat</p>
+                          </div>
+                        )
+                      }
 
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
                         <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
@@ -209,7 +218,8 @@ const Banner = () => {
 
                       <div>
                         {/* <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button> */}
-                        <button>
+
+                        <button onClick={() => setOpen(!open)}>
                           <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[50.4%] md:left-[47%]' />
                         </button>
                       </div>
@@ -220,10 +230,19 @@ const Banner = () => {
                       <p className='text-white font-normal mb-2'>Amount in SAT you receive:</p>
 
                       <div className='relative'>
-                        <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
-                          <img src={logoImg} alt="Image" className='w-[32px]' />
-                          <p className='text-white font-normal ml-2 uppercase'>Sat</p>
-                        </div>
+                        {
+                          open ? (
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                              <img src={logoImg} alt="Image" className='w-[32px]' />
+                              <p className='text-white font-normal ml-2 uppercase'>Sat</p>
+                            </div>
+                          ) : (
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                              <img src={ellipse} alt="Image" className='w-[32px]' />
+                                <p className='text-white font-normal ml-2 uppercase'>SOL</p>
+                            </div>
+                          )
+                        }
 
                         <div className='border border-[#3a6c4d] rounded-[8px]'>
                           <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0e2b24] rounded-[8px]" />
