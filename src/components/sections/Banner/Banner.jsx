@@ -1,7 +1,7 @@
-import progressImg1 from '@/assets/banner/Group1.png'
-import progressImg2 from '@/assets/banner/Group2.png'
-import progressImg3 from '@/assets/banner/Group3.png'
-import progressImg4 from '@/assets/banner/Group4.png'
+import progressImg1 from '@/assets/banner/Group4.png'
+import progressImg2 from '@/assets/banner/Group3.png'
+import progressImg3 from '@/assets/banner/Group2.png'
+import progressImg4 from '@/assets/banner/Group1.png'
 import walletImg from '@/assets/banner/solarwallet.png'
 import ellipse from '@/assets/banner/Ellipse 2.png'
 import arrowImg from "@/assets/banner/arrow.png"
@@ -14,7 +14,7 @@ import Container from '../Container/Container';
 import { Button } from '@/components/ui/button';
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect, useState } from 'react'
-import { Slider } from '@radix-ui/react-slider'
+import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
 
 const Banner = () => {
@@ -72,7 +72,7 @@ const Banner = () => {
 
       <div className='absolute top-20 md:top-32 lg:top-16 w-full'>
         <Container>
-          <div className='flex justify-between items-center'>
+          <div className='lg:flex justify-between items-center'>
             <div className='lg:w-1/2'>
               <h1 className='text-[80px] md:text-[86px] lg:text-[90px] xl:text-[117px] 2xl:text-[130px] text-white text-start font-bebasNeue font-normal tracking-wider lg:leading-[95px] xl:leading-[130px] 2xl:leading-[130px] uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
 
@@ -94,8 +94,8 @@ const Banner = () => {
             <div className='lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
               {/* Progress card */}
               <div className='max-w-[528px] mx-auto'>
-                <div className='bg-[#0A1F24] border-2 border-[#3C7D75] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
-                  <p className='text-[30px] text-center font-bold bg-clip-text text-transparent bg-gradient-to-l from-[#e8ff19] to-[#0ebbff] uppercase'>PRESALE ENDS IN</p>
+                <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
+                  <p className='text-[34px] text-center text-white font-normal font-bebasNeue uppercase tracking-widest'>PRESALE ENDS IN</p>
 
                   {/* Dynamic Timer */}
                   <div className='relative'>
@@ -133,83 +133,49 @@ const Banner = () => {
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
-                    <div className='relative'>
-                      <img src={progressImg1} alt="Image" className='w-[87px]' />
-                      <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
-                        <p className='text-[22px]'>20</p>
-                        <p className='text-[14px]'>Days</p>
-                      </div>
-                    </div>
-
-                    <div className='relative'>
-                      <img src={progressImg2} alt="Image" className='w-[87px]' />
-                      <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-[25px] leading-5'>
-                        <p className='text-[22px]'>15</p>
-                        <p className='text-[14px]'>Hours</p>
-                      </div>
-                    </div>
-
-                    <div className='relative'>
-                      <img src={progressImg3} alt="Image" className='w-[87px]' />
-                      <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
-                        <p className='text-[22px]'>30</p>
-                        <p className='text-[14px]'>Min</p>
-                      </div>
-                    </div>
-
-                    <div className='relative'>
-                      <img src={progressImg4} alt="Image" className='w-[87px]' />
-                      <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
-                        <p className='text-[22px]'>45</p>
-                        <p className='text-[14px]'>Sec</p>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
 
                 {/* Content Card */}
                 <div className='mt-5'>
-                  <div className='bg-[#0A1F24] border-2 border-[#3C7D75] rounded-[15px] backdrop-blur-[18px] px-6 py-5'>
+                  <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] px-6 py-5'>
                     <div className='space-y-2'>
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Token Name:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>kebapp</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>SAT</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Presale Price:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>0.00001</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>0.00001</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Launch Price:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>0.00003</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>0.00003</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Presale Bonus:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>15%</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>15%</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Max Buy:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>25 SOL</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>25 SOL</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Min Buy:</p>
-                        <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2] font-semibold uppercase'>0.5 SOL</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>0.5 SOL</p>
                       </div>
                     </div>
 
                     {/* Presale sold */}
-                    <div className='p-[1px] bg-gradient-to-l from-[#2d4734] to-[#133e47] rounded-[8px] mt-3'>
-                      <div className='bg-gradient-to-l from-[#213426] to-[#0e2f36] rounded-[8px] px-3 pt-1 pb-2'>
+                    <div className='border border-[#3a6c4d] rounded-[8px] mt-3'>
+                      <div className='bg-[#094720] rounded-[8px] px-3 pt-1 pb-2'>
                         <div className='flex justify-between items-center'>
                           <p className='text-white'>Presale sold</p>
-                          <p className='bg-clip-text text-transparent bg-gradient-to-l from-[#F4F914] to-[#19C5E2]' >0%</p>
+                          <p className='text-[#4AE260]' >0%</p>
                         </div>
 
                         <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" />
@@ -227,13 +193,13 @@ const Banner = () => {
 
                     {/* SOL Input */}
                     <div className='relative'>
-                      <div className='flex items-center absolute mt-[4.4px] bg-[#154438] px-5 py-1 ml-2 rounded-[8px]'>
+                      <div className='flex items-center absolute mt-[4.6px] border border-[#3e755152] bg-[#0e5326] px-5 py-1 ml-2 rounded-[8px]'>
                         <img src={ellipse} alt="Image" className='w-[32px]' />
                         <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                       </div>
 
-                      <div className='p-[1px] bg-gradient-to-l from-[#2d4734] to-[#133e47] rounded-[8px]'>
-                        <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-gradient-to-l from-[#213426] to-[#0e2f36] rounded-[8px]" />
+                      <div className='border border-[#3a6c4d] rounded-[8px]'>
+                        <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
@@ -254,17 +220,17 @@ const Banner = () => {
                       <div className='relative'>
                         <div className='flex items-center absolute mt-[4.4px] bg-[#154438] px-5 py-1 ml-2 rounded-[8px]'>
                           <img src={logoImg} alt="Image" className='w-[32px]' />
-                          <p className='text-white font-normal ml-2 uppercase'>kebapp</p>
+                          <p className='text-white font-normal ml-2 uppercase'>Sat</p>
                         </div>
 
-                        <div className='p-[1px] bg-gradient-to-l from-[#2d4734] to-[#133e47] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-gradient-to-l from-[#213426] to-[#0e2f36] rounded-[8px]" />
+                        <div className='border border-[#3a6c4d] rounded-[8px]'>
+                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
 
                     {/* Connect Wallet */}
-                    <Button className="w-full bg-gradient-to-l from-[#5e6c1e] to-[#135a65] hover:from-[#f5f914bb] hover:to-[#19c4e2bb] border border-[#F3F813] text-[18px] rounded-[10px] px-12 py-6 mt-6">Connect Wallet</Button>
+                    <Button className="w-full bg-[#02B81C] ] border border-[#40FE5B] text-[18px] rounded-[10px] px-12 py-6 mt-6">Connect Wallet</Button>
                   </div>
                 </div>
               </div>
