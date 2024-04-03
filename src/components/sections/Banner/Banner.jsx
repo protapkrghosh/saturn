@@ -4,7 +4,7 @@ import progressImg3 from '@/assets/banner/Group2.png'
 import progressImg4 from '@/assets/banner/Group1.png'
 import walletImg from '@/assets/banner/solarwallet.png'
 import ellipse from '@/assets/banner/Ellipse 2.png'
-import arrowImg from "@/assets/banner/arrow.png"
+import arrowImg from "@/assets/banner/Group 10.png"
 import logoImg from "@/assets/banner/image 197.png"
 import pathImg from '@/assets/banner/group.png'
 import shapeImg from '@/assets/banner/vector.png'
@@ -137,7 +137,7 @@ const Banner = () => {
 
                 {/* Content Card */}
                 <div className='mt-5'>
-                  <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] px-6 py-5'>
+                  <div className='bg-gradient-to-b from-[#0a3c21] to-[#0d3825] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] px-6 py-5'>
                     <div className='space-y-2'>
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Token Name:</p>
@@ -193,7 +193,7 @@ const Banner = () => {
 
                     {/* SOL Input */}
                     <div className='relative'>
-                      <div className='flex items-center absolute mt-[4.6px] border border-[#3e755152] bg-[#0e5326] px-5 py-1 ml-2 rounded-[8px]'>
+                      <div className='flex items-center absolute mt-[3px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                         <img src={ellipse} alt="Image" className='w-[32px]' />
                         <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                       </div>
@@ -205,11 +205,13 @@ const Banner = () => {
 
                     {/* custom range button */}
                     <div className='relative my-7'>
-                      <div className='h-[3px] bg-gradient-to-l from-[#F4F914] to-[#19C5E2] rounded-[70px] mt-[6px]' />
+                      <div className='h-[3px] bg-[#49AB8D] rounded-[70px] mt-[6px]' />
 
                       <div>
-                        <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button>
-                        <img src={arrowImg} alt="Image" className='absolute top-[-7px] left-[50.4%] md:left-[49.3%] cursor-pointer' />
+                        {/* <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button> */}
+                        <button>
+                          <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[50.4%] md:left-[47%]' />
+                        </button>
                       </div>
                     </div>
 
@@ -218,13 +220,13 @@ const Banner = () => {
                       <p className='text-white font-normal mb-2'>Amount in SAT you receive:</p>
 
                       <div className='relative'>
-                        <div className='flex items-center absolute mt-[4.4px] bg-[#154438] px-5 py-1 ml-2 rounded-[8px]'>
+                        <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
                           <img src={logoImg} alt="Image" className='w-[32px]' />
                           <p className='text-white font-normal ml-2 uppercase'>Sat</p>
                         </div>
 
                         <div className='border border-[#3a6c4d] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0e2b24] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
