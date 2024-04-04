@@ -22,12 +22,12 @@ const Banner = () => {
   const [open, setOpen] = useState(true);
 
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-24") - +new Date();
+    const difference = +new Date("2024-04-25") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
@@ -54,9 +54,13 @@ const Banner = () => {
       return;
     }
     timerComponents.push(
-      <span key={interval} className="px-[37px] md:px-[48px] lg:px-[49.5px] xl:px-[49px] 2xl:px-[49px]">
-        <span className="font-bold text-[21px] md:text-[22px]">
+      <span key={interval} className="relative md:ml-2 mt-6 md:mt-9 mb-8 md:mb-9">
+        <span className="border border-[#3a6d4d] bg-[#094820] px-4 py-3 mx-3 font-bold text-lg md:text-[32px] rounded-[8px]">
           {timeLeft[interval]}
+        </span>{" "}
+
+        <span className="text-white text-[13px] md:text-[16px] uppercase absolute top-10 left-[16px] md:left-[22px] mt-[10px] md:mt-[15px]">
+          {interval.slice(0, interval.length - 1)}
         </span>{" "}
       </span>
     );
@@ -101,11 +105,11 @@ const Banner = () => {
 
                   {/* Dynamic Timer */}
                   <div className='relative'>
-                    <div className='text-[#F5F6F7] flex justify-center absolute top-4 left-[-5px] md:-left-4 lg:left-[-20px] xl:left-5'>
+                    <div className='text-[#F5F6F7] flex justify-center'>
                       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                     </div>
 
-                    <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
+                    {/* <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
                       <div className='relative'>
                         <img src={progressImg1} alt="Image" className='w-[87px]' />
                         <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
@@ -133,7 +137,15 @@ const Banner = () => {
                           <p className='text-[14px] mt-5 md:ml-[5px]'>Sec</p>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
+
+                    {/* <div className='text-white uppercase relative'>
+                      <div className='flex justify-center gap-x-10 absolute left-[139px]'>
+                        <p>Hours</p>
+                        <p>Minutes</p>
+                        <p>seconds</p>
+                      </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -148,12 +160,12 @@ const Banner = () => {
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Presale Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>$0.00001</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.0001</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Launch Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>$0.00003</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.0003</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
