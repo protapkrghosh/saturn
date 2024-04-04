@@ -16,6 +16,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { useEffect, useState } from 'react'
 import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
+import { Progress } from "@/components/ui/progress"
 
 const Banner = () => {
   const [open, setOpen] = useState(true);
@@ -147,12 +148,12 @@ const Banner = () => {
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Presale Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>0.00001</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.00001</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Launch Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>0.00003</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.00003</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
@@ -176,19 +177,20 @@ const Banner = () => {
                       <div className='bg-[#094720] rounded-[8px] px-3 pt-1 pb-2'>
                         <div className='flex justify-between items-center'>
                           <p className='text-white'>Presale sold</p>
-                          <p className='text-[#4AE260]' >0%</p>
+                          <p className='text-[#4AE260] font-semibold' >87%</p>
                         </div>
 
-                        <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" />
+                        {/* <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" /> */}
+                        <Progress value={87} className="mt-1" />
                       </div>
                     </div>
 
                     <div className='flex justify-between mt-6 mb-3'>
                       <p className='text-white font-normal'>Amount in SOL you pay:</p>
-                      <div className='flex items-center'>
+                      {/* <div className='flex items-center'>
                         <img src={walletImg} alt="Image" />
                         <p className='text-white font-normal ml-1'>0.00 SOL</p>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* SOL Input */}
@@ -213,7 +215,7 @@ const Banner = () => {
                     </div>
 
                     {/* custom range button */}
-                    <div className='relative my-7'>
+                    <div className='relative mt-7 mb-2'>
                       <div className='h-[3px] bg-[#49AB8D] rounded-[70px] mt-[6px]' />
 
                       <div>
@@ -232,20 +234,20 @@ const Banner = () => {
                       <div className='relative'>
                         {
                           open ? (
-                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={logoImg} alt="Image" className='w-[32px]' />
                               <p className='text-white font-normal ml-2 uppercase'>Sat</p>
                             </div>
                           ) : (
-                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                              <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={ellipse} alt="Image" className='w-[32px]' />
                               <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                             </div>
                           )
                         }
 
-                        <div className='border border-[#3a6c4d] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0e2b24] rounded-[8px]" />
+                        <div className='border border-[#3c674d] rounded-[8px]'>
+                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
