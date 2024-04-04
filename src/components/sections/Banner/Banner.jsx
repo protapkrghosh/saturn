@@ -66,6 +66,28 @@ const Banner = () => {
     );
   });
 
+
+  // Condition value for SOL input fields
+  useEffect(() => {
+    const input = document.getElementById('myInput');
+
+    const handleChange = () => {
+      if (parseFloat(input.value) < 0.5) {
+        input.value = '0.5';
+      }
+    };
+
+    if (input) {
+      input.addEventListener('change', handleChange);
+    }
+
+    return () => {
+      if (input) {
+        input.removeEventListener('change', handleChange);
+      }
+    };
+  }, []);
+
   return (
     <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
@@ -222,7 +244,7 @@ const Banner = () => {
                       }
 
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" placeholder="0.5" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
@@ -251,7 +273,7 @@ const Banner = () => {
                               <p className='text-white font-normal ml-2 uppercase'>Sat</p>
                             </div>
                           ) : (
-                              <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={ellipse} alt="Image" className='w-[32px]' />
                               <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                             </div>
