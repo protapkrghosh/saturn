@@ -28,8 +28,8 @@ const Banner = () => {
     if (difference > 0) {
       timeLeft = {
         // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
+        hours: Math.floor((difference / (500 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 600 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
@@ -59,9 +59,9 @@ const Banner = () => {
           {timeLeft[interval]}
         </span>{" "}
 
-        <span className="text-white text-[13px] md:text-[16px] uppercase absolute top-10 left-[16px] md:left-[22px] mt-[10px] md:mt-[15px]">
+        {/* <span className="text-white text-[13px] md:text-[16px] uppercase absolute top-10 left-[16px] md:left-[22px] mt-[10px] md:mt-[15px]">
           {interval.slice(0, interval.length - 1)}
-        </span>{" "}
+        </span>{" "} */}
       </span>
     );
   });
@@ -161,13 +161,13 @@ const Banner = () => {
                       </div>
                     </div> */}
 
-                    {/* <div className='text-white uppercase relative'>
-                      <div className='flex justify-center gap-x-10 absolute left-[139px]'>
+                    <div className='relative'>
+                      <div className='text-white uppercase text-[12px] md:text-[15px] flex justify-center gap-x-8 md:gap-x-[45px] absolute -top-2 left-[92px] md:left-[139px] lg:left-[100px] xl:left-[139px]'>
                         <p>Hours</p>
                         <p>Minutes</p>
                         <p>seconds</p>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </div>
 
