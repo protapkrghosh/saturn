@@ -97,7 +97,7 @@ const Banner = () => {
             </div>
 
             {/* Presale ends in card section */}
-            <div className='lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
+            <div className='w-full lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
               {/* Progress card */}
               <div className='max-w-[528px] mx-auto'>
                 <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
