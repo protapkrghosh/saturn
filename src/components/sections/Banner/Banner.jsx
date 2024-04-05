@@ -171,16 +171,20 @@ const Banner = () => {
             <div className='w-full lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
               {/* Progress card */}
               <div className='max-w-[528px] mx-auto'>
-                <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
-                  <p className='text-[34px] text-center text-white font-normal font-bebasNeue uppercase tracking-widest'>PRESALE ENDS IN</p>
 
-                  {/* Dynamic Timer */}
-                  <div className='relative'>
-                    <div className='text-[#F5F6F7] flex justify-center'>
-                      {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-                    </div>
+                {/* Counter timer */}
+                {
+                  timerComponents.length ? (
+                    <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
+                      <p className='text-[34px] text-center text-white font-normal font-bebasNeue uppercase tracking-widest'>PRESALE ENDS IN</p>
 
-                    {/* <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
+                      {/* Dynamic Timer */}
+                      <div className='relative'>
+                        <div className='text-[#F5F6F7] flex justify-center'>
+                          {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+                        </div>
+
+                        {/* <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
                       <div className='relative'>
                         <img src={progressImg1} alt="Image" className='w-[87px]' />
                         <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
@@ -210,15 +214,19 @@ const Banner = () => {
                       </div>
                     </div> */}
 
-                    <div className='relative'>
-                      <div className='text-white uppercase text-[12px] md:text-[15px] flex justify-center gap-x-8 md:gap-x-[45px] absolute -top-2 left-[92px] md:left-[139px] lg:left-[100px] xl:left-[139px]'>
-                        <p>Hours</p>
-                        <p>Minutes</p>
-                        <p>seconds</p>
+                        <div className='relative'>
+                          <div className='text-white uppercase text-[12px] md:text-[15px] flex justify-center gap-x-7 md:gap-x-[45px] absolute -top-2 left-[82px] md:left-[139px] lg:left-[100px] xl:left-[139px]'>
+                            <p>Hours</p>
+                            <p>Minutes</p>
+                            <p>seconds</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  ) : ('')
+                }
+
+
 
                 {/* Content Card */}
                 <div className='mt-5'>
