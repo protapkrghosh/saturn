@@ -16,17 +16,19 @@ import { MdArrowOutward } from "react-icons/md";
 import { useEffect, useState } from 'react'
 import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
+import { Progress } from "@/components/ui/progress"
 
 const Banner = () => {
   const [open, setOpen] = useState(true);
 
+  // Dynamic timer
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-24") - +new Date();
+    const difference = +new Date("2024-04-25") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
@@ -53,18 +55,52 @@ const Banner = () => {
       return;
     }
     timerComponents.push(
-      <span key={interval} className="px-[35px] md:px-[49.6px] lg:px-[49.5px] xl:px-[48px] 2xl:px-[48px]">
-        <span className="font-bold text-[21px] md:text-[22px]">
+      <span key={interval} className="relative md:ml-2 mt-6 md:mt-9 mb-8 md:mb-9">
+        <span className="border border-[#3a6d4d] bg-[#094820] px-4 py-3 mx-3 font-bold text-lg md:text-[32px] rounded-[8px]">
           {timeLeft[interval]}
         </span>{" "}
+
+        {/* <span className="text-white text-[13px] md:text-[16px] uppercase absolute top-10 left-[16px] md:left-[22px] mt-[10px] md:mt-[15px]">
+          {interval.slice(0, interval.length - 1)}
+        </span>{" "} */}
       </span>
     );
   });
 
+
+  // Condition value for SOL input fields
+  useEffect(() => {
+    const solInput = document.getElementById('myInput');
+    const satInput = document.getElementById('satInput');
+
+    const handleChange = () => {
+      let solValue = parseFloat(solInput.value);
+      if (isNaN(solValue) || solValue < 0.5) {
+        solInput.value = '0.5';
+        solValue = 0.5; // Set to default value if NaN or less than 0.5
+      }
+
+      // Calculate SAT value and update SAT input field
+      let satValue = solValue / 100;
+      satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
+    };
+
+    if (solInput) {
+      solInput.addEventListener('change', handleChange);
+    }
+
+    return () => {
+      if (solInput) {
+        solInput.removeEventListener('change', handleChange);
+      }
+    };
+  }, []);
+
+
   return (
     <div className='relative overflow-hidden' id='home'>
       {/* Shadow and background */}
-      <div className='h-[170vh] md:h-[265vh] lg:h-[185vh] xl:h-[160vh] 2xl:h-[130vh]'>
+      <div className='h-[175vh] md:h-[265vh] lg:h-[185vh] xl:h-[160vh] 2xl:h-[130vh]'>
         {/* <img src={moonImg} alt="Image" className='absolute top-0 -mt-20 w-full' /> */}
         <div className='pathShadow xl:w-[400px] 2xl:w-[450px] xl:h-[400px] 2xl:h-[450px] absolute blur-[250px] 2xl:blur-[300px]' />
         <img src={shapeImg} alt="Image" className='absolute top-0 left-0 w-full' />
@@ -73,8 +109,8 @@ const Banner = () => {
 
       <div className='absolute top-12 md:top-32 lg:top-16 w-full'>
         <Container>
-          <div className='lg:flex justify-between items-center'>
-            <div className='lg:w-1/2 mb-24 lg:mb-0'>
+          <div className='flex flex-col-reverse lg:flex-row justify-between items-center'>
+            <div className='lg:w-1/2 mt-24 lg:mt-0'>
               <h1 className='text-[76px] md:text-[86px] lg:text-[90px] xl:text-[117px] 2xl:text-[130px] text-white text-center lg:text-start font-bebasNeue font-normal tracking-wider leading-[95px] md:leading-[130px] lg:leading-[95px] xl:leading-[130px] 2xl:leading-[130px] uppercase'>BETTER THAN <span className='text-[#40FE5B]'>JUPITER</span></h1>
 
               <p className='md:text-[18px] text-white font-inter text-center lg:text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
@@ -92,7 +128,7 @@ const Banner = () => {
             </div>
 
             {/* Presale ends in card section */}
-            <div className='lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
+            <div className='w-full lg:w-1/2 xl:-mr-5 2xl:-mr-24'>
               {/* Progress card */}
               <div className='max-w-[528px] mx-auto'>
                 <div className='bg-[#0b3d22] border border-[#3c654e] rounded-[15px] backdrop-blur-[18px] pt-4 pb-6'>
@@ -100,11 +136,11 @@ const Banner = () => {
 
                   {/* Dynamic Timer */}
                   <div className='relative'>
-                    <div className='text-[#F5F6F7] flex justify-center absolute top-4 left-[-5px] md:left-5 lg:left-[-20px] xl:left-5'>
+                    <div className='text-[#F5F6F7] flex justify-center'>
                       {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                     </div>
 
-                    <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
+                    {/* <div className='flex justify-center gap-x-2 md:gap-x-8 mt-5'>
                       <div className='relative'>
                         <img src={progressImg1} alt="Image" className='w-[87px]' />
                         <div className='text-[#F5F6F7] text-center font-normal absolute top-6 left-7 leading-5'>
@@ -132,6 +168,14 @@ const Banner = () => {
                           <p className='text-[14px] mt-5 md:ml-[5px]'>Sec</p>
                         </div>
                       </div>
+                    </div> */}
+
+                    <div className='relative'>
+                      <div className='text-white uppercase text-[12px] md:text-[15px] flex justify-center gap-x-8 md:gap-x-[45px] absolute -top-2 left-[92px] md:left-[139px] lg:left-[100px] xl:left-[139px]'>
+                        <p>Hours</p>
+                        <p>Minutes</p>
+                        <p>seconds</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -147,12 +191,12 @@ const Banner = () => {
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Presale Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>0.00001</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.0001</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
                         <p className='text-white'>Launch Price:</p>
-                        <p className='text-[#4AE260] font-semibold uppercase'>0.00003</p>
+                        <p className='text-[#4AE260] font-semibold uppercase'>$0.0003</p>
                       </div>
 
                       <div className='flex justify-between items-center'>
@@ -176,19 +220,20 @@ const Banner = () => {
                       <div className='bg-[#094720] rounded-[8px] px-3 pt-1 pb-2'>
                         <div className='flex justify-between items-center'>
                           <p className='text-white'>Presale sold</p>
-                          <p className='text-[#4AE260]' >0%</p>
+                          <p className='text-[#4AE260] font-semibold' >87%</p>
                         </div>
 
-                        <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" />
+                        {/* <Slider defaultValue={[50]} max={100} step={5} className="my-3 cursor-pointer" /> */}
+                        <Progress value={87} className="mt-1" />
                       </div>
                     </div>
 
                     <div className='flex justify-between mt-6 mb-3'>
                       <p className='text-white font-normal'>Amount in SOL you pay:</p>
-                      <div className='flex items-center'>
+                      {/* <div className='flex items-center'>
                         <img src={walletImg} alt="Image" />
                         <p className='text-white font-normal ml-1'>0.00 SOL</p>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* SOL Input */}
@@ -207,20 +252,21 @@ const Banner = () => {
                         )
                       }
 
+                      {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" placeholder="0.5" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
                     {/* custom range button */}
-                    <div className='relative my-7'>
+                    <div className='relative mt-7 mb-2'>
                       <div className='h-[3px] bg-[#49AB8D] rounded-[70px] mt-[6px]' />
 
                       <div>
                         {/* <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button> */}
 
                         <button onClick={() => setOpen(!open)}>
-                          <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[50.4%] md:left-[47%]' />
+                          <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[45%] md:left-[47%]' />
                         </button>
                       </div>
                     </div>
@@ -232,20 +278,21 @@ const Banner = () => {
                       <div className='relative'>
                         {
                           open ? (
-                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={logoImg} alt="Image" className='w-[32px]' />
                               <p className='text-white font-normal ml-2 uppercase'>Sat</p>
                             </div>
                           ) : (
-                            <div className='flex items-center absolute mt-[4.4px] border border-[#41575667] bg-[#122e2d] px-4 py-1 ml-2 rounded-[8px]'>
+                            <div className='flex items-center absolute mt-[4.4px] border border-[#3e755152] bg-[#0e5326] px-4 py-1 ml-2 rounded-[8px]'>
                               <img src={ellipse} alt="Image" className='w-[32px]' />
                               <p className='text-white font-normal ml-2 uppercase'>SOL</p>
                             </div>
                           )
                         }
 
-                        <div className='border border-[#3a6c4d] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0e2b24] rounded-[8px]" />
+                        {/* SAT input filed */}
+                        <div className='border border-[#3c674d] rounded-[8px]'>
+                          <Input id="satInput" placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>

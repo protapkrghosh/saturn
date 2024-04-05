@@ -20,7 +20,7 @@ const Tokenomics = () => {
           <div className='lg:w-[50%] md:w-[80%]'>
             <img className='lg:-ml-24 md:ml-20 animate-spin duration-3000' src={tokenRound} alt="image" />
 
-            <img className='w-[90px] md:w-[125px] lg:w-[110px] xl:w-[140px] 2xl:w-[150px] absolute left-[136px] md:left-[290px] lg:left-[72px] xl:left-[125px] 2xl:left-[175px] bottom-[839px] md:bottom-[905px] lg:bottom-[415px] xl:bottom-[332px] 2xl:bottom-[304px]' src={earth} alt="image" />
+            <img className='w-[90px] md:w-[125px] lg:w-[110px] xl:w-[140px] 2xl:w-[150px] absolute left-[145px] md:left-[290px] lg:left-[72px] xl:left-[125px] 2xl:left-[175px] bottom-[795px] md:bottom-[905px] lg:bottom-[415px] xl:bottom-[332px] 2xl:bottom-[304px]' src={earth} alt="image" />
           </div>
 
           {/* catagory section  */}
@@ -32,10 +32,10 @@ const Tokenomics = () => {
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
-                  <img src={tokenIcon1} alt="imges" />
+                  <img src={tokenIcon1} alt="imges" className='w-[75px] md:w-auto' />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Liquidity</p>
+                  <p className='text-[#FFF] font-inter text-[22px] md:text-[25px] font-bold'>Liquidity</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>35 billion $SAT</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Tokenomics = () => {
                   duration={5}
                   separator=" "
                   suffix=" %"
-                  className='text-[#FFF] font-inter text-[25px] '
+                  className='text-[#FFF] font-inter text-[23px] '
                 />
               </div>
             </div>
@@ -54,10 +54,10 @@ const Tokenomics = () => {
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
-                  <img src={tokenIcon2} alt="imges" />
+                  <img src={tokenIcon2} alt="imges" className='w-[75px] md:w-auto' />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Presale</p>
+                  <p className='text-[#FFF] font-inter text-[22px] md:text-[25px] font-bold'>Presale</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>30 billion $SAT</p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const Tokenomics = () => {
                   duration={5}
                   separator=" "
                   suffix=" %"
-                  className='text-[#FFF] font-inter text-[25px] '
+                  className='text-[#FFF] font-inter text-[23px] '
                 />
               </div>
             </div>
@@ -76,10 +76,10 @@ const Tokenomics = () => {
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
-                  <img src={tokenIcon3} alt="imges" />
+                  <img src={tokenIcon3} alt="imges" className='w-[75px] md:w-auto' />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Future development</p>
+                  <p className='text-[#FFF] font-inter text-[22px] md:text-[25px]  font-bold'>Future development</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>20 billion $SAT</p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const Tokenomics = () => {
                   duration={5}
                   separator=" "
                   suffix=" %"
-                  className='text-[#FFF] font-inter text-[25px] '
+                  className='text-[#FFF] font-inter text-[23px] '
                 />
               </div>
             </div>
@@ -98,10 +98,10 @@ const Tokenomics = () => {
             <div className='flex justify-between items-center mb-8'>
               <div className='flex items-center gap-2'>
                 <div>
-                  <img src={tokenIcon4} alt="imges" />
+                  <img src={tokenIcon4} alt="imges" className='w-[75px] md:w-auto' />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Staking  rewards</p>
+                  <p className='text-[#FFF] font-inter text-[22px] md:text-[25px] font-bold'>Staking  rewards</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>10 billion $SAT</p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const Tokenomics = () => {
                   duration={5}
                   separator=" "
                   suffix=" %"
-                  className='text-[#FFF] font-inter text-[25px] '
+                  className='text-[#FFF] font-inter text-[23px] '
                 />
               </div>
             </div>
@@ -120,10 +120,10 @@ const Tokenomics = () => {
             <div className='flex justify-between items-center'>
               <div className='flex items-center gap-2'>
                 <div>
-                  <img src={tokenIcon5} alt="imges" />
+                  <img src={tokenIcon5} alt="imges" className='w-[75px] md:w-auto' />
                 </div>
                 <div>
-                  <p className='text-[#FFF] font-inter text-[25px] font-bold'>Team</p>
+                  <p className='text-[#FFF] font-inter text-[22px] md:text-[25px] font-bold'>Team</p>
                   <p className='text-[#FFF] font-inter text-[15px]'>5 billion $SAT</p>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Tokenomics = () => {
                   duration={5}
                   separator=" "
                   suffix=" %"
-                  className='text-[#FFF] font-inter text-[25px] '
+                  className='text-[#FFF] font-inter text-[23px] '
                 />
               </div>
             </div>
