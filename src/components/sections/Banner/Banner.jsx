@@ -302,7 +302,7 @@ const Banner = () => {
 
                       {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input id="myInput" placeholder="0.5" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
@@ -340,7 +340,7 @@ const Banner = () => {
 
                         {/* SAT input filed */}
                         <div className='border border-[#3c674d] rounded-[8px]'>
-                          <Input id="satInput" placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
+                          <Input id="satInput" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
