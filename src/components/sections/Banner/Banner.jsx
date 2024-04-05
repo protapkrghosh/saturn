@@ -17,10 +17,12 @@ import { useEffect, useState } from 'react'
 import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
 import { Progress } from "@/components/ui/progress"
+import { Link } from 'react-scroll'
 
 const Banner = () => {
   const [open, setOpen] = useState(true);
 
+  // Dynamic timer
   const calculateTimeLeft = () => {
     const difference = +new Date("2024-04-25") - +new Date();
     let timeLeft = {};
@@ -28,8 +30,8 @@ const Banner = () => {
     if (difference > 0) {
       timeLeft = {
         // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (500 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 600 / 60) % 60),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
@@ -69,24 +71,32 @@ const Banner = () => {
 
   // Condition value for SOL input fields
   useEffect(() => {
-    const input = document.getElementById('myInput');
+    const solInput = document.getElementById('myInput');
+    const satInput = document.getElementById('satInput');
 
     const handleChange = () => {
-      if (parseFloat(input.value) < 0.5) {
-        input.value = '0.5';
+      let solValue = parseFloat(solInput.value);
+      if (isNaN(solValue) || solValue < 0.5) {
+        solInput.value = '0.5';
+        solValue = 0.5; // Set to default value if NaN or less than 0.5
       }
+
+      // Calculate SAT value and update SAT input field
+      let satValue = solValue / 100;
+      satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
     };
 
-    if (input) {
-      input.addEventListener('change', handleChange);
+    if (solInput) {
+      solInput.addEventListener('change', handleChange);
     }
 
     return () => {
-      if (input) {
-        input.removeEventListener('change', handleChange);
+      if (solInput) {
+        solInput.removeEventListener('change', handleChange);
       }
     };
   }, []);
+
 
   return (
     <div className='relative overflow-hidden' id='home'>
@@ -107,14 +117,14 @@ const Banner = () => {
               <p className='md:text-[18px] text-white font-inter text-center lg:text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
 
               <div className='flex justify-center lg:justify-start'>
-                <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+                <Link to="home" smooth={true} offset={-30} duration={600}>
                   <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
                     <span className="flex justify-center items-center">
                       <p className='text-[18px] 2xl:text-[19px] font-inter font-normal uppercase mr-2'>Buy now</p>
                       <img src={symbols} alt="Image" className='w-[27px] 2xl:w-[28px] group-hover:-mt-2  duration-300' />
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -243,6 +253,7 @@ const Banner = () => {
                         )
                       }
 
+                      {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
                         <Input id="myInput" placeholder="0.5" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
@@ -280,8 +291,9 @@ const Banner = () => {
                           )
                         }
 
+                        {/* SAT input filed */}
                         <div className='border border-[#3c674d] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
+                          <Input id="satInput" placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
