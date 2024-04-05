@@ -30,7 +30,7 @@ const Banner = () => {
     if (difference > 0) {
       timeLeft = {
         // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (500 * 60 * 60)) % 24),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
@@ -69,16 +69,45 @@ const Banner = () => {
   });
 
 
-  // Condition value for SOL input fields
+  // // Condition value for SOL input fields
+  // useEffect(() => {
+  //   const solInput = document.getElementById('myInput');
+  //   const satInput = document.getElementById('satInput');
+
+  //   const handleChange = () => {
+  //     let solValue = parseFloat(solInput.value);
+
+  //     if (isNaN(solValue) || solValue < 0.5) {
+  //       // solInput.value = '0.5';
+  //       solValue = 0.5;
+  //     }
+
+  //     // Calculate SAT value and update SAT input field
+  //     let satValue = solValue / 100;
+  //     satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
+  //   };
+
+  //   if (solInput) {
+  //     solInput.addEventListener('input', handleChange); // Change event replaced with input event
+  //   }
+
+  //   return () => {
+  //     if (solInput) {
+  //       solInput.removeEventListener('input', handleChange); // Change event replaced with input event
+  //     }
+  //   };
+  // }, []);
+
+
   useEffect(() => {
     const solInput = document.getElementById('myInput');
     const satInput = document.getElementById('satInput');
 
     const handleChange = () => {
       let solValue = parseFloat(solInput.value);
+
       if (isNaN(solValue) || solValue < 0.5) {
-        solInput.value = '0.5';
-        solValue = 0.5; // Set to default value if NaN or less than 0.5
+        solValue = 0.5;
       }
 
       // Calculate SAT value and update SAT input field
@@ -86,13 +115,23 @@ const Banner = () => {
       satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
     };
 
+    const handleBlur = () => {
+      let solValue = parseFloat(solInput.value);
+
+      if (isNaN(solValue) || solValue < 0.5) {
+        solInput.value = '0.5'; // Reset to default value if NaN or less than 0.5
+      }
+    };
+
     if (solInput) {
-      solInput.addEventListener('change', handleChange);
+      solInput.addEventListener('input', handleChange);
+      solInput.addEventListener('blur', handleBlur); // Listen for blur event
     }
 
     return () => {
       if (solInput) {
-        solInput.removeEventListener('change', handleChange);
+        solInput.removeEventListener('input', handleChange);
+        solInput.removeEventListener('blur', handleBlur);
       }
     };
   }, []);
