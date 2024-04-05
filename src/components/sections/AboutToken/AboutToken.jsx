@@ -4,6 +4,7 @@ import globe from '@/assets/aboutToken/aboutGlobe.png';
 import earth from '@/assets/aboutToken/image19.png';
 import pathBg from '@/assets/aboutToken/group.png';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-scroll';
 
 const AboutToken = () => {
   return (
@@ -31,9 +32,9 @@ const AboutToken = () => {
               <p>Exciting developments are on the horizon as well, with staking soon to be released. This not only incentivizes long-term commitment but also strengthens the security and stability of the $SAT ecosystem.</p>
             </div>
 
-            <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+            <Link to="home" smooth={true} offset={-30} duration={600}>
               <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
-            </a>
+            </Link>
           </div>
         </div>
 

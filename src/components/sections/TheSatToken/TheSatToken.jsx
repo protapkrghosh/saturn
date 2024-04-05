@@ -2,6 +2,7 @@ import Container from '../Container/Container';
 import TheSatTokenImg from '@/assets/theSatToken/Group 1000003510.png'
 import { FaCheck } from "react-icons/fa6";
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-scroll';
 
 const TheSatToken = () => {
   return (
@@ -45,9 +46,9 @@ const TheSatToken = () => {
               <p className='text-[#F4F4F4] font-inter text-[18px] leading-[28.8px]'>Launching staking very soon</p>
             </div>
 
-            <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+            <Link to="home" smooth={true} offset={-30} duration={600}>
               <Button className="bg-[#02b81c4d] uppercase text-[16px] font-inter font-normal">Buy Now</Button>
-            </a>
+            </Link>
           </div>
 
           {/* Shadow */}
