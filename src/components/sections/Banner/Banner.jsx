@@ -17,6 +17,7 @@ import { useEffect, useState } from 'react'
 import { Slider } from '@/components/ui/slider'
 import { Input } from '@/components/ui/input'
 import { Progress } from "@/components/ui/progress"
+import { Link } from 'react-scroll'
 
 const Banner = () => {
   const [open, setOpen] = useState(true);
@@ -116,14 +117,14 @@ const Banner = () => {
               <p className='md:text-[18px] text-white font-inter text-center lg:text-start lg:w-[90%] xl:w-[80%] 2xl:w-[85%] mt-7 mb-12'>In the digital realm of innovation and efficiency, $SAT lights the path to a brighter future. It fuels progress in the world of utility tokens.</p>
 
               <div className='flex justify-center lg:justify-start'>
-                <a href="https://solanapad.io/launchpad-list/CWpPGn2KU7DJmHrh4kJtwVDWTfPAYmAm4PG3Zmd6uroc" target="_blank">
+                <Link to="home" smooth={true} offset={-30} duration={600}>
                   <Button className="text-[#fff] bg-[#02B81C] rounded-[8px] group cursor-pointer px-12 py-[27px]">
                     <span className="flex justify-center items-center">
                       <p className='text-[18px] 2xl:text-[19px] font-inter font-normal uppercase mr-2'>Buy now</p>
                       <img src={symbols} alt="Image" className='w-[27px] 2xl:w-[28px] group-hover:-mt-2  duration-300' />
                     </span>
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
 
