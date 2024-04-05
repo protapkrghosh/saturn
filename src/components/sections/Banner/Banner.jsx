@@ -21,6 +21,7 @@ import { Progress } from "@/components/ui/progress"
 const Banner = () => {
   const [open, setOpen] = useState(true);
 
+  // Dynamic timer
   const calculateTimeLeft = () => {
     const difference = +new Date("2024-04-25") - +new Date();
     let timeLeft = {};
@@ -69,24 +70,32 @@ const Banner = () => {
 
   // Condition value for SOL input fields
   useEffect(() => {
-    const input = document.getElementById('myInput');
+    const solInput = document.getElementById('myInput');
+    const satInput = document.getElementById('satInput');
 
     const handleChange = () => {
-      if (parseFloat(input.value) < 0.5) {
-        input.value = '0.5';
+      let solValue = parseFloat(solInput.value);
+      if (isNaN(solValue) || solValue < 0.5) {
+        solInput.value = '0.5';
+        solValue = 0.5; // Set to default value if NaN or less than 0.5
       }
+
+      // Calculate SAT value and update SAT input field
+      let satValue = solValue / 100;
+      satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
     };
 
-    if (input) {
-      input.addEventListener('change', handleChange);
+    if (solInput) {
+      solInput.addEventListener('change', handleChange);
     }
 
     return () => {
-      if (input) {
-        input.removeEventListener('change', handleChange);
+      if (solInput) {
+        solInput.removeEventListener('change', handleChange);
       }
     };
   }, []);
+
 
   return (
     <div className='relative overflow-hidden' id='home'>
@@ -243,6 +252,7 @@ const Banner = () => {
                         )
                       }
 
+                      {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
                         <Input id="myInput" placeholder="0.5" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
@@ -280,8 +290,9 @@ const Banner = () => {
                           )
                         }
 
+                        {/* SAT input filed */}
                         <div className='border border-[#3c674d] rounded-[8px]'>
-                          <Input placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
+                          <Input id="satInput" placeholder="0" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
