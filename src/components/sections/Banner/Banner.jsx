@@ -20,6 +20,7 @@ import { Progress } from "@/components/ui/progress"
 import { Link } from 'react-scroll'
 
 const Banner = () => {
+  // Input logo change 
   const [open, setOpen] = useState(true);
 
   // Dynamic timer
@@ -119,13 +120,13 @@ const Banner = () => {
       let solValue = parseFloat(solInput.value);
 
       if (isNaN(solValue) || solValue < 0.5) {
-        solInput.value = '0.5'; // Reset to default value if NaN or less than 0.5
+        solInput.value = '0.5';
       }
     };
 
     if (solInput) {
       solInput.addEventListener('input', handleChange);
-      solInput.addEventListener('blur', handleBlur); // Listen for blur event
+      solInput.addEventListener('blur', handleBlur);
     }
 
     return () => {
@@ -302,7 +303,7 @@ const Banner = () => {
 
                       {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input id="myInput" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" placeholder="00" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
@@ -311,15 +312,13 @@ const Banner = () => {
                       <div className='h-[3px] bg-[#49AB8D] rounded-[70px] mt-[6px]' />
 
                       <div>
-                        {/* <button className="bg-gradient-to-l from-[#48aa8d] to-[#48aa8d] rounded-full w-[34px] h-[34px] absolute -top-[16px] left-[47%]"></button> */}
-
-                        <button onClick={() => setOpen(!open)}>
+                        <button>
                           <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[45%] md:left-[47%]' />
                         </button>
                       </div>
                     </div>
 
-                    {/* kebapp Input */}
+                    {/* SAT Input filed */}
                     <div>
                       <p className='text-white font-normal mb-2'>Amount in SAT you receive:</p>
 
@@ -340,7 +339,7 @@ const Banner = () => {
 
                         {/* SAT input filed */}
                         <div className='border border-[#3c674d] rounded-[8px]'>
-                          <Input id="satInput" className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
+                          <Input id="satInput" readOnly className="text-white placeholder:text-white text-end border-none bg-[#0a4221] rounded-[8px]" />
                         </div>
                       </div>
                     </div>
