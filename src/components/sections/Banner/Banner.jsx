@@ -24,7 +24,7 @@ const Banner = () => {
 
   // Dynamic timer
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-25") - +new Date();
+    const difference = +new Date("2024-04-07") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
