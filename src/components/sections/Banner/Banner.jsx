@@ -120,13 +120,13 @@ const Banner = () => {
       let solValue = parseFloat(solInput.value);
 
       if (isNaN(solValue) || solValue < 0.5) {
-        solInput.value = '0.5'; // Reset to default value if NaN or less than 0.5
+        solInput.value = '0.5';
       }
     };
 
     if (solInput) {
       solInput.addEventListener('input', handleChange);
-      solInput.addEventListener('blur', handleBlur); // Listen for blur event
+      solInput.addEventListener('blur', handleBlur);
     }
 
     return () => {
