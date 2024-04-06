@@ -37,6 +37,11 @@ const Banner = () => {
       };
     }
 
+    // Pad numbers with leading zeros
+    Object.keys(timeLeft).forEach(interval => {
+      timeLeft[interval] = timeLeft[interval].toString().padStart(2, '0');
+    });
+
     return timeLeft;
   };
 
