@@ -37,6 +37,11 @@ const Banner = () => {
       };
     }
 
+    // Pad numbers with leading zeros
+    Object.keys(timeLeft).forEach(interval => {
+      timeLeft[interval] = timeLeft[interval].toString().padStart(2, '0');
+    });
+
     return timeLeft;
   };
 
@@ -112,7 +117,7 @@ const Banner = () => {
       }
 
       // Calculate SAT value and update SAT input field
-      let satValue = solValue / 100;
+      let satValue = solValue / 0.0001;
       satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
     };
 
@@ -312,7 +317,7 @@ const Banner = () => {
                       <div className='h-[3px] bg-[#49AB8D] rounded-[70px] mt-[6px]' />
 
                       <div>
-                        <button>
+                        <button className='cursor-default'>
                           <img src={arrowImg} alt="Image" className='w-[35px] absolute top-[-16px] left-[45%] md:left-[47%]' />
                         </button>
                       </div>
