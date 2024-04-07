@@ -3,7 +3,7 @@ import Container from '../Container/Container';
 
 const Roadmap = () => {
   return (
-    <div className='pt-20 pb-28 relative overflow-hidden' id='roadmap'>
+    <div className='pt-28 pb-28 relative overflow-hidden' id='roadmap'>
       <Container>
         <div>
           <h1 className='text-[#fff] text-[58px] text-center font-inter font-bold capitalize'>Roadmap</h1>
