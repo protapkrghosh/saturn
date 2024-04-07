@@ -25,7 +25,7 @@ const Banner = () => {
 
   // Dynamic timer
   const calculateTimeLeft = () => {
-    const difference = +new Date("2024-04-07") - +new Date();
+    const difference = +new Date("2024-04-08") - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -308,7 +308,7 @@ const Banner = () => {
 
                       {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input id="myInput" placeholder="00" className="text-white placeholder:text-white text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" placeholder="00" className="text-white placeholder:text-white placeholder:text-opacity-65 text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
