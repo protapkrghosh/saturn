@@ -95,12 +95,13 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const [color, setColor] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
+  
 
+  // Determine which section is currently in view based on scroll position
   useEffect(() => {
     const changeActiveLink = () => {
       const scrollPosition = window.scrollY;
 
-      // Determine which section is currently in view based on scroll position
       const homeSection = document.getElementById("home");
       const aboutTokenSection = document.getElementById("aboutToken");
       const tokenomicsSection = document.getElementById("tokenomics");
@@ -145,8 +146,9 @@ const NavBar = () => {
     };
   }, []);
 
+
+  // Change color of navbar based on scroll position
   useEffect(() => {
-    // Change color of navbar based on scroll position
     const changeColor = () => {
       if (window.scrollY >= 0) {
         setColor(true);
