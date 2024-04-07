@@ -118,7 +118,7 @@ const Banner = () => {
 
       // Calculate SAT value and update SAT input field
       let satValue = solValue / 0.0001;
-      satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(2);
+      satInput.value = isNaN(satValue) ? '0' : satValue.toFixed(0);
     };
 
     const handleBlur = () => {
@@ -308,7 +308,7 @@ const Banner = () => {
 
                       {/* SOL input filed */}
                       <div className='border border-[#3a6c4d] rounded-[8px]'>
-                        <Input id="myInput" placeholder="00" className="text-white placeholder:text-white placeholder:text-opacity-65 text-end border-none bg-[#094720] rounded-[8px]" />
+                        <Input id="myInput" placeholder="0.00" className="text-white placeholder:text-white placeholder:text-opacity-65 text-end border-none bg-[#094720] rounded-[8px]" />
                       </div>
                     </div>
 
