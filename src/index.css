@@ -22,6 +22,18 @@ body {
   mix-blend-mode: lighten;
 }
 
+.wallet-adapter-dropdown {
+  width: 100%;
+}
+
+.wallet-adapter-button {
+  width: 100%;
+}
+
+.wallet-adapter-button-trigger {
+  width: 100%;
+}
+
 /* The satToken */
 .theSatShadow {
   border-radius: 819.156px;
